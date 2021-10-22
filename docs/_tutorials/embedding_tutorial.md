@@ -21,31 +21,6 @@ The examples live in the `rhino/examples` directory in the distribution and in `
 
 In this document, JavaScript code will be in `green`, Java code will be in `green,` and shell logs will be in `purple`.
 
-## In this document:
-
-- [RunScript: A simple embedding](#runscript)
-- [Entering a Context](#enteringcontext)
-- [Initializing standard objects](#initializing)
-- [Collecting the arguments](#collecting)
-- [Evaluating a script](#evaluating)
-- [Printing the result](#print)
-- [Exiting the Context](#exit)
-- [Expose Java APIs](#expose)
-- [Using Java APIs](#usejava)
-- [Implementing interfaces](#implementinginterfaces)
-- [Adding Java objects](#addjava)
-- [Using JavaScript objects from Java](#usingjsobjs)
-- [Using JavaScript variables](#usingjsvars)
-- [Calling JavaScript functions](#callingjsfuns)
-- [JavaScript host objects](#javascripthostobjects)
-- [Defining Host Objects](#defininghostobjects)
-- [Counter example](#counter)
-- [Counter's constructors](#counterctors)
-- [Class name](#classname)
-- [Dynamic properties](#dynamic)
-- [Defining JavaScript "methods"](#definingmethods)
-- [Adding Counter to RunScript](#addingcounter)
-
 ## RunScript: A simple embedding
 
 About the simplest embedding of Rhino possible is the [RunScript example](https://github.com/mozilla/rhino/examples/RunScript.java). All it does it read a script from the command line, execute it, and print a result.
