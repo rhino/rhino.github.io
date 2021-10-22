@@ -35,10 +35,6 @@ In addition, Rhino has implemented JavaAdapters, which allows JavaScript to impl
 
 Numerous books and tutorials on JavaScript are available. [JavaScript: The Definitive Guide](https://www.oreilly.com/catalog/jscript5/) is recommended, and contains a chapter on Rhino.
 
-### Deprecated Language Features
-
-Several language features introduced in JavaScript 1.2 are now deprecated. These features allow "computational reflection": that is, the ability for a script to determine and influence aspects of the way it is evaluated. These features are generally not broadly useful, yet they impose significant constraints on implementations that hamper or prevent optimization. The deprecated features are the `__proto__` and `__parent__` properties, and the constructors `With`, `Closure`, and `Call`. Attempts to invoke these constructors with the language version 1.4 will result in an error. For other versions, a warning will be generated.
-
 ### Internationalization
 
 The messages reported by the JavaScript engine are by default retrieved from the property file `org/mozilla/javascript/resources/Messages.properties`. If other properties files with extensions corresponding to the current locale exist, they will be used instead.
@@ -46,32 +42,6 @@ The messages reported by the JavaScript engine are by default retrieved from the
 ### JavaScript Language Versions
 
 Some behavior in the JavaScript engine is dependent on the language version. In browser embeddings, this language version is selected using the `LANGUAGE` attribute of the `SCRIPT` tag with values such as `"JavaScript1.2"`.
-
-Version 1.3 and greater are ECMA conformant.
-
-#### Operators `==` and `!=`
-
-Version 1.2 only uses strict equality for the `==` and `!=` operators. In version 1.3 and greater, `==` and `!=` have the same meanings as ECMA. The operators `===` and `!==` use strict equality in all versions.
-
-#### ToBoolean
-
-`Boolean(new Boolean(false))` is `false` for all versions before 1.3. It is `true` (and thus ECMA conformant) for version 1.3 and greater.
-
-#### `Array.prototype.toString and Object.prototype.toString`
-
-Version 1.2 only returns array or object literal notation (`"[1]"` or `"{a:1, b:2}"` for example). In version 1.3 and greater these functions are ECMA conformant.
-
-#### `Array` constructor
-
-`Array(i)` for a number argument _i_ constructs an array with a single element equal to _i_ for version 1.2 only. Otherwise the ECMA conformant version is used (an array is constructed with no elements but with `length` property equal to _i_).
-
-#### `String.prototype.substring`
-
-For version 1.2 only, the two arguments are not swapped if the first argument is less than the second one. All other versions are ECMA compliant.
-
-#### `String.prototype.split`
-
-For version 1.2 only, split performs the Perl4 special case when given a single space character as an argument (skips leading whitespace, and splits on whitespace). All other versions split on the space character proper as specified by ECMA.
 
 ### Security
 

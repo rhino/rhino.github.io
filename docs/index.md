@@ -11,7 +11,7 @@ nav_order: 1
 
 #### Rhino downloads
 
-How to [get source and binaries](./_docs/releases.md).
+How to [get source and binaries](./_docs/releases/index.md).
 
 #### Rhino documentation
 
