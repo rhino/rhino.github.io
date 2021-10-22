@@ -18,7 +18,7 @@ Information on Rhino for script writers and embedders.
 ## General
 
 |  [Overview](overview.md)  |  An overview of the JavaScript language and of Rhino.  |
-|  [License](license.md)  |  Rhino license information.  |
+|  [License](../license.md)  |  Rhino license information.  |
 |  [Requirements and limitations](requirements_and_limitations.md)  |  What you must have to run Rhino; what Rhino cannot do.  |
 |  [Releases](releases/index.md)  |  Includes release notes for Rhino releases  |
 |  [Optimization](optimization.md)  |  Details on the various optimization levels.  |
@@ -54,4 +54,4 @@ Information on Rhino for script writers and embedders.
 
 ## Rhino contributors
 
-Interested in contributing to Rhino? Check out the [Rhino Wish List](rhino_wish_list.md).
+Interested in contributing to Rhino? Check out the [Rhino Wish List](../roadmap.md).

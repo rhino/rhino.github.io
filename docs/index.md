@@ -1,7 +1,7 @@
 ---
-title: "Rhino"
+title: "Home"
 ---
-# Rhino
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
@@ -27,4 +27,4 @@ How to [get source and binaries](./_docs/releases.md).
 
 #### Rhino help
 
-[Some resources](./_docs/community.md) if you get stuck.
+[Some resources](community.md) if you get stuck.

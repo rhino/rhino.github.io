@@ -125,7 +125,7 @@ For more details, see [bug 418034](https://bugzilla.mozilla.org/show_bug.cgi?id=
 
 Thanks to the sharp eyes of Hannes Wallnoefer, who spotted a more-liberally licensed version of files we depended on for the Rhino debugger GUI, we now have the debugger fully built and shipped with Rhino.
 
-See [Rhino License](license.md) for details on the new license for files in the debugger.
+See [Rhino License](../../license.md) for details on the new license for files in the debugger.
 
 ## Doctest
 

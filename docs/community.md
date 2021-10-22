@@ -13,7 +13,7 @@ title: "Community"
 {:toc}
 
 ---
-Have a question that you can't find answer to in the [Rhino documentation](documentation.md)? Here are some additional resources for help:
+Have a question that you can't find answer to in the [Rhino documentation](./_docs/documentation.md)? Here are some additional resources for help:
 
 #### Mailing List
 
