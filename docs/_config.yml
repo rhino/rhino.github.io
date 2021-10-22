@@ -1,1 +1,57 @@
-theme: jekyll-theme-tactile
+title: Rhino
+description: Rhino is an open-source implementation of JavaScript written entirely in Java
+baseurl: "/rhino"
+remote_theme: pmarsceill/just-the-docs
+aux_links:
+  "Rhino on GitHub":
+    - "//github.com/mozilla/rhino"
+
+gem:
+  - jekyll-mentions
+#  - jekyll-redirect-from
+
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  tutorials:
+    permalink: "/:collection/:path/"
+    output: true
+  tools:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    docs:
+      name: Documentation
+    tutorials:
+      name: Tutorials
+    tools:
+      name: Tools
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: docs
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: tools
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: "default"
+
+encoding: utf-8
+
+relative_links:
+  enabled: true
+  collections: true

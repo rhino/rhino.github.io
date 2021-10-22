@@ -1,15 +1,30 @@
-# Rhino: JavaScript in Java
+---
+title: "Rhino"
+---
+# Rhino
+{: .no_toc }
 
-<a title="Rodrigo J De Marco, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rhino_(234581759).jpeg"><img width="384" alt="Rhino (234581759)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Rhino_%28234581759%29.jpeg/512px-Rhino_%28234581759%29.jpeg"></a>
+{: .fs-6 .fw-300 }
 
-Rhino is an implementation of JavaScript in Java.
+## Table of contents
+{: .no_toc .text-delta }
 
-## Links
+1. TOC
+{:toc}
 
-[Readme](https://github.com/mozilla/rhino)
+---
+![](/@api/deki/files/832/=rhino.jpg)
 
-[Release Notes](https://github.com/mozilla/rhino/blob/master/RELEASE-NOTES.md)
+**Rhino** is an open-source implementation of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) written entirely in Java. It is typically embedded into Java applications to provide scripting to end users. It is embedded in J2SE 6 as the default Java scripting engine.
 
-[Compatibility Table](./compat/engines.html)
+#### Rhino downloads
 
-[Javadoc](./javadoc/index.html)
+How to [get source and binaries](./_docs/download_rhino.md).
+
+#### Rhino documentation
+
+[Information on Rhino](./_docs/documentation.md) for script writers and embedders.
+
+#### Rhino help
+
+[Some resources](./_docs/community.md) if you get stuck.
