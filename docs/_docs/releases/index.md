@@ -52,8 +52,11 @@ Rhino is available for download both in source and compiled form.
 |  Rhino 1.4R3  |  1999-05-10  |  Initial public release  |  [rhino14R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino14R3.zip)  |
 
 [^1]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
-  
-  If you would like to use E4X you need to add `xbean.jar` from XMLBeans distribution to your class path.
-  Rhino 1.6R6 and later the E4X support has been rewritten to rely solely on the DOM3 APIs supported natively by Java 1.5.
-  Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
-  If neither XMLBeans nor DOM3 are present, E4X is not available.
+
+    If you would like to use E4X you need to add `xbean.jar` from XMLBeans distribution to your class path.
+
+    Rhino 1.6R6 and later the E4X support has been rewritten to rely solely on the DOM3 APIs supported natively by Java 1.5.
+
+    Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
+
+    If neither XMLBeans nor DOM3 are present, E4X is not available.
