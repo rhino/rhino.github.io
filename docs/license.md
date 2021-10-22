@@ -1,5 +1,6 @@
 ---
 title: "License"
+nav_order: 5
 ---
 # {{ page.title }}
 {: .no_toc }

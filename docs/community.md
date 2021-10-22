@@ -1,7 +1,8 @@
 ---
-title: "Community"
+title: Community
+nav_order: 3
 ---
-# Community
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }

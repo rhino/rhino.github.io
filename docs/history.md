@@ -1,7 +1,8 @@
 ---
-title: "History"
+title: History
+nav_order: 4
 ---
-# History
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }

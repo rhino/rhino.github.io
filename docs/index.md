@@ -1,5 +1,6 @@
 ---
 title: "Home"
+nav_order: 1
 ---
 # {{ page.title }}
 {: .no_toc }
