@@ -1,7 +1,7 @@
 ---
-title: "Documentation"
+title: Documentation
 ---
-# Documentation
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
@@ -23,12 +23,11 @@ Information on Rhino for script writers and embedders.
 |  [Releases](releases/index.md)  |  Includes release notes for Rhino releases  |
 |  [Optimization](optimization.md)  |  Details on the various optimization levels.  |
 |  [FAQ](faq.md)  |  Answers to frequently asked questions about Rhino.  |
-|  [Rhino history](history.md)  |  History of the beast.  |
+|  [Rhino history](../history.md)  |  History of the beast.  |
 
 ## Writing Scripts
 
 |  [Scripting Java](../_tutorials/scripting_java.md)  |  How to use Rhino to script Java classes.  |
-|  [Performance Hints](performance.md)  |  Some tips on writing faster JavaScript code.  |
 
 ## JavaScript Tools
 
@@ -40,13 +39,12 @@ Information on Rhino for script writers and embedders.
 ## Embedding Rhino
 
 |  [Embedding tutorial](../_tutorials/embedding_tutorial.md)  |  A short tutorial on how to embed Rhino into your application.  |
-|  [API Javadoc Reference](https://mozilla.github.io/rhino/javadoc/index.html) (Link broken?  [Try this at Jarvana.](https://www.jarvana.com/jarvana/view/org/mozilla/rhino/1.7R3/rhino-1.7R3-javadoc.jar!/index.html))  |  An annotated outline of the programming interface to Rhino (tip only).  |
+|  [API Javadoc Reference](../javadoc/index.html)  |  An annotated outline of the programming interface to Rhino (tip only).  |
 |  [Scopes and Contexts](scopes_and_contexts.md)  |  Describes how to use scopes and contexts for the best performance and flexibility, with an eye toward multithreaded environments.  |
 |  [Serialization](serialization.md)  |  How to serialize JavaScript objects and functions in Rhino.  |
 |  [Runtime](runtime.md)  |  A brief description of the JavaScript runtime.  |
 |  [Small Footprint](footprint.md)  |  Hints for those interested in small-footprint embeddings.  |
 |  [Examples](examples.md)  |  A set of examples showing how to control the JavaScript engine and build JavaScript host objects.  |
-|  [Using Rhino with Bean Scripting Framework (BSF)](bsf.md)  |  How to use Rhino with apps that support BSF (Bean Scripting Framework) from the Apache Jakarta project.  |
 
 ## External references
 

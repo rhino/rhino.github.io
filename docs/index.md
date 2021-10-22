@@ -1,17 +1,8 @@
 ---
-title: "Home"
+title: Home
 nav_order: 1
 ---
 # {{ page.title }}
-{: .no_toc }
-
-{: .fs-6 .fw-300 }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Rhino_%28234581759%29.jpeg/512px-Rhino_%28234581759%29.jpeg)
