@@ -89,7 +89,3 @@ org.mozilla.javascript.tools.shell.Main test2.js``3`
 ```
 
 Now the function _f_ is compiled to a Java class, but that class is then made available in the classpath so serialization works. This isn't that interesting an example since compiling a function to a class and then loading it accomplishes the same as serializing an interpreted function, but it becomes more relevant if you wish to serialize JavaScript objects that have references to compiled functions.
-
-## Original Document Information- Author: [Norris Boyd](mailto:norrisboyd@gmail.com)
-- Last Updated Date: November 15, 2006
-- Copyright Information: Portions of this content are © 1998–2006 by individual mozilla.org contributors; content available under a Creative Commons license | [Details](https://www.mozilla.org/foundation/licensing/website-content.html).

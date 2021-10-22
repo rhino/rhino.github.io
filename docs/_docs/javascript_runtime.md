@@ -59,8 +59,3 @@ If the services provided by `defineClass()` are insufficient, try other methods 
 ## Contexts and threads
 
 Every thread that executes JavaScript must have an associated `Context`. Multiple threads (with multiple associated `Contexts`) may act upon the same set of objects. Any host objects that are defined are responsible for any sychronization required to run safely from multiple threads.
-
-## Original Document Information
- - Author: [Norris Boyd](mailto:norrisboyd@gmail.com)
-- Last Updated Date: November 17, 2006
-- Copyright Information: Portions of this content are © 1998–2006 by individual mozilla.org contributors; content available under a Creative Commons license | [Details](https://www.mozilla.org/foundation/licensing/website-content.html).

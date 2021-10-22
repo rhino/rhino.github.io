@@ -149,7 +149,3 @@ hello, undefined
 Now to test this function you might write a  [JUnit](https://www.junit.org/) test that executes a bunch of setup code and then calls `hello()` three times, saving the result value, and calling a comparison function with the actual and expected values. It's a decent amount of code to write.
 
 Doctest does this all for me. Rhino 1.7R2 contains both a new doctest shell function and a JUnit test [DoctestsTest](https://github.com/mozilla/rhino/testsrc/org/mozilla/javascript/tests/DoctestsTest.java) that finds files with a `.doctest` extension and runs them. So now all I need to do is copy the shell session above, paste it into `hello.doctest`, and put it in the right directory and I have a JUnit test! It's much more convenient to write tests, which greatly increases the chances that tests actually get written.
-
----
-
-[Norrisboyd](/user:norrisboyd) 05:04, 11 March 2008 (PDT)

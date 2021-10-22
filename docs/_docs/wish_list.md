@@ -60,7 +60,3 @@ Provide APIs to access the AST of parsed scripts. _Done_
 ## Bugs and enhancements
 
 The [Rhino Bug List](https://bugzilla.mozilla.org/buglist.cgi?bug_file_loc=&bug_file_loc_type=allwordssubstr&bug_id=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bugidtype=include&chfieldfrom=&chfieldto=Now&chfieldvalue=&email1=&email2=&emailassigned_to1=1&emailassigned_to2=1&emailqa_contact2=1&emailreporter2=1&emailtype1=exact&emailtype2=exact&field-1-0-0=product&field-1-1-0=bug_status&field0-0-0=noop&keywords=&keywords_type=allwords&long_desc=&long_desc_type=substring&product=Rhino&query_format=advanced&remaction=&short_desc=&short_desc_type=allwordssubstr&status_whiteboard=&status_whiteboard_type=allwordssubstr&type-1-0-0=anyexact&type-1-1-0=anyexact&type0-0-0=noop&value-1-0-0=Rhino&value-1-1-0=UNCONFIRMED,NEW,ASSIGNED,REOPENED&value0-0-0=&votes=&order=bugs.bug_id&query_based_on=) contains a number of bugs and enhancement requests. Work on any of those is always welcome.
-
----
-
-[Norrisboyd](/user:norrisboyd) 05:06, 11 March 2008 (PDT)

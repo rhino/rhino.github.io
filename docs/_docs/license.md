@@ -53,7 +53,3 @@ Additionally, some files (currently the contents of toolsrc/org/mozilla/javascri
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
-
----
-
-[Norrisboyd](/user:norrisboyd) 06:16, 14 April 2008 (PDT)

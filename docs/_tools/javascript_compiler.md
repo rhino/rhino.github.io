@@ -80,7 +80,3 @@ hi, mom!
 $ java org.mozilla.javascript.tools.jsc.Main -extends java.applet.Applet
     -implements java.lang.Runnable NervousText.js
 ```
-
----
-
---[Norrisboyd](/user:norrisboyd) 12:26, 13 June 2007 (PDT)

@@ -78,7 +78,3 @@ See [bug 382457](https://bugzilla.mozilla.org/show_bug.cgi?id=382457) for more d
 ## Bug fixes
 
 This [list](https://bugzilla.mozilla.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=Rhino&target_milestone=1.6R6&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&resolution=FIXED&emailassigned_to1=1&emailtype1=exact&email1=&emailassigned_to2=1&emailreporter2=1&emailqa_contact2=1&emailtype2=exact&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=|bug) shows all the bugs (and enhancements) fixed in Rhino 1.6R6.
-
----
-
-[Norrisboyd](/user:norrisboyd) 07:03, 13 June 2007 (PDT)
