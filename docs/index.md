@@ -19,7 +19,7 @@ title: "Rhino"
 
 #### Rhino downloads
 
-How to [get source and binaries](./_docs/download_rhino.md).
+How to [get source and binaries](./_docs/releases.md).
 
 #### Rhino documentation
 

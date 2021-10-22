@@ -1,7 +1,8 @@
 ---
 title: "New in Rhino 1.6R7"
+parent: Releases
 ---
-# New in Rhino 1.6R7
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }

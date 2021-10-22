@@ -20,7 +20,7 @@ Information on Rhino for script writers and embedders.
 |  [Overview](overview.md)  |  An overview of the JavaScript language and of Rhino.  |
 |  [License](license.md)  |  Rhino license information.  |
 |  [Requirements and limitations](requirements_and_limitations.md)  |  What you must have to run Rhino; what Rhino cannot do.  |
-|  [Downloads archive](downloads_archive.md)  |  Includes release notes for Rhino releases  |
+|  [Releases](releases/index.md)  |  Includes release notes for Rhino releases  |
 |  [Optimization](optimization.md)  |  Details on the various optimization levels.  |
 |  [FAQ](faq.md)  |  Answers to frequently asked questions about Rhino.  |
 |  [Rhino history](history.md)  |  History of the beast.  |

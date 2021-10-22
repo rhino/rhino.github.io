@@ -1,7 +1,8 @@
 ---
 title: "New in Rhino 1.7R1"
+parent: Releases
 ---
-# New in Rhino 1.7R1
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
@@ -17,7 +18,7 @@ Rhino 1.7R1 is a major feature release.
 
 ## JavaScript 1.7 features
 
-As of Rhino1.7R1, Rhino now supports the features of JavaScript 1.7. See [New in JavaScript 1.7](en/new_in_javascript_1.7). JavaScript 1.7 supports the following features:
+As of Rhino1.7R1, Rhino now supports the features of JavaScript 1.7. See [New in JavaScript 1.7](https://web.archive.org/web/20210502042346mp_/https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7). JavaScript 1.7 supports the following features:
 
 - Generators and iterators
 - Array comprehensions

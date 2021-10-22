@@ -1,7 +1,7 @@
 ---
 title: "License"
 ---
-# License
+# {{ page.title }}
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
@@ -13,11 +13,12 @@ title: "License"
 {:toc}
 
 ---
-Rhino is available under open source licenses.
 
-## MPL/GPL License
+Rhino is open source.
 
-The majority of the source code for Rhino is available under a [MPL 1.1/GPL 2.0](https://www.mozilla.org/MPL/) license.
+As of release 1.7R4 Rhino is available under [MPL](https://www.mozilla.org/MPL/) 2.0.
+
+Previous versions were released under [MPL 1.1/GPL 2.0](https://www.mozilla.org/MPL/) license.
 
 ## License for portions of the Rhino debugger
 
