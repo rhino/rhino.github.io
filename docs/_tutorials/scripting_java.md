@@ -275,7 +275,7 @@ Here `javaIntfOrClass` is an interface to implement or a class to extend and `ja
 
 In practice there's little need to call the `JavaAdapter` constructor directly. Most of the time the previous syntaxes using the `new` operator will be sufficient.
 
-### JavaScript Functions as Java Interfaces
+## JavaScript Functions as Java Interfaces
 
 Often we need to implement an interface with only one method, like in the previous `Runnable` example or when providing various event listener implementations. To facilitate this Rhino allows to pass JavaScript function when such interface is expected. The function is called as the implementation of interface method.
 
@@ -304,7 +304,7 @@ true
 js> Calling System.exit()...
 ```
 
-### Creating Java Arrays
+## Creating Java Arrays
 
 Rhino provides no special syntax for creating Java arrays. You must use the `java.lang.reflect.Array` class for this purpose. To create an array of five Java strings you would make the following call:
 
@@ -331,7 +331,7 @@ js> new java.lang.String(a)
 hi
 ```
 
-### Java Strings and JavaScript Strings
+## Java Strings and JavaScript Strings
 
 It's important to keep in mind that Java strings and JavaScript strings are **not** the same. Java strings are instances of the type `java.lang.String` and have all the methods defined by that class. JavaScript strings have methods defined by `String.prototype`. The most common stumbling block is `length`, which is a method of Java strings and a dynamic property of JavaScript strings:
 
@@ -355,7 +355,7 @@ js> javaString.match(/a.*/)
 ava
 ```
 
-### JavaImporter Constructor
+## JavaImporter Constructor
 
 `JavaImporter` is a new global constructor that allows to omit explicit package names when scripting Java:
 
@@ -381,7 +381,7 @@ Previously such functionality was available only to embeddings that used [`org.m
 
 See [Bugzilla 245882](https://bugzilla.mozilla.org/show_bug.cgi?id=245882) for details.
 
-### Java Exceptions
+## Java Exceptions
 
 Exceptions thrown by Java methods can be caught by JavaScript code using [try...catch statement](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Exception_Handling_Statements/try...catch_Statement). Rhino wraps Java exceptions into error objects with the following properties:
 
