@@ -9,14 +9,14 @@ nav_order: 1
 
 **Rhino** is an open-source implementation of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) written entirely in Java. It is typically embedded into Java applications to provide scripting to end users. It is embedded in J2SE 6 as the default Java scripting engine.
 
-#### Rhino downloads
+## Rhino downloads
 
 How to [get source and binaries](./_docs/releases/index.md).
 
-#### Rhino documentation
+## Rhino documentation
 
 [Information on Rhino](./_docs/documentation.md) for script writers and embedders.
 
-#### Rhino help
+## Rhino help
 
 [Some resources](community.md) if you get stuck.

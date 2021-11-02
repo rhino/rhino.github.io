@@ -1,19 +1,23 @@
 ---
 title: "Optimization Levels"
 ---
+
 # {{ page.title }}
+
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
 ---
-### Optimization levels
+
+## Optimization levels
 
 The currently supported optimization settings are:
 
@@ -22,6 +26,7 @@ The currently supported optimization settings are:
 |  1-9  |  All optimizations are performed. Simple data and type flow analysis is performed to determine which JavaScript variables can be allocated to Java VM registers, and which variables are used only as Numbers. Local common sub-expressions are collapsed (currently this only happens for property lookup, but in the future more expressions may be optimized). All local variables and parameters are allocated to Java VM registers. Function call targets are speculatively pre-cached (based on the name used in the source) so that dispatching can be direct, pending runtime confirmation of the actual target. Arguments are passed as Object/Number pairs to reduce conversion overhead  |
 
 _Notes:_
+
 - Some language features (indirect calls to eval, use of the arguments property of function objects) were previously not supported in higher optimization levels. These features have been removed from the language in ECMA, so higher optimization levels are now conformant.
 - Future versions may allocate more aggressive optimizations to higher optimization levels. For compatibility with future versions, use level 1. For maximal optimization, use level 9, but retest your application when upgrading to new versions.
 - Scripts are optimized at compile time, not at execution time. So if a Script is compiled with the context's optimizationLevel set to 1, it will be executed with those optimizations, regardless of the optimizationLevel of the context in which it is executed.

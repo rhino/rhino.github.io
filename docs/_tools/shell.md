@@ -1,12 +1,15 @@
 ---
 title: "Shell"
 ---
+
 # Shell
+
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,7 +18,7 @@ title: "Shell"
 ---
 The JavaScript shell provides a simple way to run scripts in batch mode or an interactive environment for exploratory programming.
 
-### Invoking the Shell
+## Invoking the Shell
 
 `java org.mozilla.javascript.tools.shell.Main [options] script-filename-or-url [script-arguments]`
 
@@ -29,7 +32,7 @@ Executes _script-source_ as a JavaScript script.
 
 Reads _script-filename-or-url_ content and execute it as a JavaScript script.
 
-#### `-opt optLevel` / `-O optLevel`
+### `-opt optLevel` / `-O optLevel`
 
 Optimizes at level _optLevel_, which must be `-1` or an integer between `0` and `9`. See [Rhino Optimization](../_docs/optimization.md) for more details.
 
@@ -45,11 +48,11 @@ Enable strict mode.
 
 Enable experimental support for continuations and set the optimization level to -1 to force interpretation mode. Starting with Rhino 1.7 this options is no longer available.
 
-#### Note
+### Note
 
 If the shell is invoked with the system property `rhino.use_java_policy_security` set to `true` and with a security manager installed, the shell restricts scripts permissions based on their URLs according to Java policy settings. This is available only if JVM implements Java2 security model.
 
-### Predefined Properties
+## Predefined Properties
 
 Scripts executing in the shell have access to some additional properties of the top-level object.
 
@@ -107,7 +110,7 @@ Execute the specified command with the given argument and options as a separate 
 
 Usage:
 
-```
+```sh
 runCommand(command)
 runCommand(command, arg1, ..., argN)
 runCommand(command, arg1, ..., argN, options)
@@ -147,15 +150,16 @@ Quit shell. The shell will also quit in interactive mode if an end-of-file chara
 
 Get or set JavaScript version number. If no argument is supplied, the current version number is returned. If an argument is supplied, it is expected to be one of `100`, `110`, `120`, `130`, `140`, `150`, `160 or 170` to indicate JavaScript version 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6 or 1.7 respectively.
 
-### Examples
+## Examples
 
-#### Invocation
+### Invocation
 
 Here the shell is invoked three times from the command line. (The system command prompt is shown as `$`.) The first invocation executes a script specified on the command line itself. The next invocation has no arguments, so the shell goes into interactive mode, reading and evaluating each line as it is typed in. Finally, the last invocation executes a script from a file and accesses arguments to the script itself.
 
-```
+```sh
 $ java org.mozilla.javascript.tools.shell.Main -e "print('hi')"
 hi
+
 $ java org.mozilla.javascript.tools.shell.Main
 js> print('hi')
 hi
@@ -168,21 +172,22 @@ js> var a = 34;
 js> f()
 34
 js> quit()
+
 $ cat echo.js
 for (i in arguments) {
   print(arguments[i])
 }
+
 $ java org.mozilla.javascript.tools.shell.Main echo.js foo bar
 foo
 bar
-$
 ```
 
-#### `spawn` and `sync`
+### `spawn` and `sync`
 
 The following example creates 2 threads via `spawn` and uses `sync` to create a synchronized version of the function `test`.
 
-```
+```js
 js> function test(x) {
   print("entry");
   java.lang.Thread.sleep(x*1000);
@@ -204,7 +209,7 @@ exit
 
 Here are a few examples of invoking `runCommand` under Linux.
 
-```
+```js
 js> runCommand('date')
 Thu Jan 23 16:49:36 CET 2003
 0
@@ -245,7 +250,7 @@ js> runCommand("echo", { args: arg_array})
 
 Examples for Windows are similar:
 
-```
+```js
 js> // Invoke shell command
 js> runCommand("cmd", "/C", "date /T")
 27.08.2005

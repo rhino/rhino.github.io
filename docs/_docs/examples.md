@@ -1,12 +1,15 @@
 ---
 title: "Examples"
 ---
+
 # Examples
+
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -31,23 +34,23 @@ The [NervousText.js](https://github.com/mozilla/rhino/tree/master/examples/Nervo
 
 ## Controlling the JavaScript Engine
 
-#### The RunScript class
+### The RunScript class
 
 [RunScript.java](https://github.com/mozilla/rhino/tree/master/examples/RunScript.java) is a simple program that executes a script from the command line.
 
-#### The Control class
+### The Control class
 
 [Control.java](https://github.com/mozilla/rhino/tree/master/examples/Control.java) is a program that executes a simple script and then manipulates the result.
 
-#### JavaScript Shell
+### JavaScript Shell
 
 [Shell.java](https://github.com/mozilla/rhino/tree/master/examples/Shell.java) is a program that executes JavaScript programs; it is a simplified version of the shell in the `tools` package. The programs may be specified as files on the command line or by typing interactively while the shell is running.
 
-#### PrimitiveWrapFactory
+### PrimitiveWrapFactory
 
 [PrimitiveWrapFactory.java](https://github.com/mozilla/rhino/tree/master/examples/PrimitiveWrapFactory.java) is an example of a WrapFactory that can be used to control the wrapping behavior of the Rhino engine on calls to Java methods.
 
-#### Multithreaded Script Execution
+### Multithreaded Script Execution
 
 [DynamicScopes.java](https://github.com/mozilla/rhino/tree/master/examples/DynamicScopes.java) is a program that creates a single global scope object and then shares it across multiple threads. Sharing the global scope allows both information to be shared across threads, and amortizes the cost of Context.initStandardObjects by only performing that expensive operation once.
 
@@ -55,14 +58,14 @@ The [NervousText.js](https://github.com/mozilla/rhino/tree/master/examples/Nervo
 
 First check out the [tutorial](../_tutorials/embedding_tutorial.md) if you haven't already.
 
-#### The Foo class - Extending ScriptableObject
+### The Foo class - Extending ScriptableObject
 
 [Foo.java](https://github.com/mozilla/rhino/tree/master/examples/Foo.java) is a simple JavaScript host object that includes a property with an associated action and a variable argument method.
 
-#### The Matrix class - Implementing Scriptable
+### The Matrix class - Implementing Scriptable
 
 [Matrix.java](https://github.com/mozilla/rhino/tree/master/examples/Matrix.java) provides a simple multidimensional array by implementing the Scriptable interface.
 
-#### The File class - An advanced example
+### The File class - An advanced example
 
 [File.java](https://github.com/mozilla/rhino/tree/master/examples/File.java) extends ScriptableObject to provide a means of reading and writing files from JavaScript. A more involved example of host object definition.

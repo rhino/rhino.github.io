@@ -1,12 +1,15 @@
 ---
 title: "Debugger"
 ---
+
 # Debugger
+
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,7 +18,7 @@ title: "Debugger"
 ---
 The Rhino JavaScript debugger is a GUI that allows debugging of interpreted JavaScript scripts run in Rhino. Note that this debugger **will not** work with JavaScript scripts run in the mozilla browser since Rhino is not the engine used in such environments.
 
-![](../assets/images/debugger-ui.png)
+![Debugger UI](../assets/images/debugger-ui.png)
 
 Current limitations:
 
@@ -25,7 +28,7 @@ Current limitations:
 
 The Mozilla Rhino JavaScript engine includes a source-level debugger for debugging JavaScript scripts. The debugger is itself a Java program which you may run as
 
-```
+```sh
 java org.mozilla.javascript.tools.debugger.Main [options] [filename.js] [script-arguments]
 ```
 
