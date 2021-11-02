@@ -225,7 +225,7 @@ class java.lang.String g(int,java.lang.String)
 
 See [Java Method Overloading and LiveConnect 3](https://web.archive.org/web/20110623074154/http://www.mozilla.org/js/liveconnect/lc3_method_overloading.html) for a more precise definition of overloading semantics.
 
-### Implementing Java Interfaces
+## Implementing Java Interfaces
 
 Now that we can access Java classes, create Java objects, and access fields, methods, and properties of those objects, we have a great deal of power at our fingertips. However, there are a few instances where that is not enough: many APIs in Java work by providing interfaces that clients must implement. One example of this is the `Thread` class: its constructor takes a `Runnable` that contains a single method `run` that will be called when the new thread is started.
 
@@ -261,7 +261,7 @@ The final `js` prompt and the output from the new thread may appear in either or
 
 Behind the scenes, Rhino generates the bytecode for a new Java class that implements `Runnable` and forwards all calls to its `run` method over to an associated JavaScript object. The object that implements this class is called a _Java adapter_. Because the forwarding to JavaScript occurs at runtime, it is possible to delay defining the methods implementing an interface until they are called. While omitting a required method is bad practice for programming in the large, it's useful for small scripts and for exploratory programming.
 
-### The JavaAdapter Constructor
+## The JavaAdapter Constructor
 
 In the previous section we created Java adapters using the `new` operator with Java interfaces. This approach has its limitations: it's not possible to implement multiple interfaces, nor can we extend non-abstract classes. For these reasons there is a `JavaAdapter` constructor.
 
