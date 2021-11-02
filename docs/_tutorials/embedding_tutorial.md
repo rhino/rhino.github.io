@@ -20,8 +20,6 @@ This tutorial leads you through the steps from a simple embedding to more custom
 
 The examples live in the `rhino/examples` directory in the distribution and in `mozilla/js/rhino/examples` in cvs. This document will link to them using [lxr](https://lxr.mozilla.org/).
 
-In this document, JavaScript code will be in `green`, Java code will be in `green,` and shell logs will be in `purple`.
-
 ## RunScript: A simple embedding
 
 About the simplest embedding of Rhino possible is the [RunScript example](https://github.com/mozilla/rhino/examples/RunScript.java). All it does it read a script from the command line, execute it, and print a result.
