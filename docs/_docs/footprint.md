@@ -67,7 +67,7 @@ Class generation library, Regular Expressions, E4X implementataion and
 deprecated files. To build such minimalist jar without debug information,
 run the following command from the top directory of Rhino distribution:
 
-```
+```sh
 ant clean
 ant -Ddebug=off -Dno-regexp=true -Dno-e4x=true smalljar
 ```

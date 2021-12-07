@@ -1,6 +1,7 @@
 ---
 title: "JavaScript compiler"
 ---
+
 # JavaScript compiler
 {: .no_toc }
 
@@ -13,13 +14,14 @@ title: "JavaScript compiler"
 {:toc}
 
 ---
-### Overview
+
+## Overview
 
 The JavaScript compiler translates JavaScript source into Java class files. The resulting Java class files can then be loaded and executed at another time, providing a convenient method for transferring JavaScript, and for avoiding translation cost.
 
 Note that the top-level functions available to the shell (such as print) are not available to compiled scripts when they are run outside the shell.
 
-### Compiler command line
+## Compiler command line
 
 `java org.mozilla.javascript.tools.jsc.Main` [_options_] `file1.js [file2.js...]`
 
@@ -67,16 +69,20 @@ Specifies the package to generate the class into. The string _packageName_ must 
 
 Specifies the language version to compile with. The string _versionNumber_ must be one of 100, 110, 120, 130, 140, 150, 160, or 170. See [JavaScript Language Versions](../_docs/overview.md#javascript_language_versions) for more information on language versions.
 
-### Examples
+## Examples
 
-```
+```sh
 $ cat test.js
 java.lang.System.out.println("hi, mom!");
+
 $ java org.mozilla.javascript.tools.jsc.Main test.js
+
 $ ls *.class
 test.class
+
 $ java test
 hi, mom!
+
 $ java org.mozilla.javascript.tools.jsc.Main -extends java.applet.Applet
     -implements java.lang.Runnable NervousText.js
 ```

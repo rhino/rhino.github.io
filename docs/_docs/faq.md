@@ -13,19 +13,18 @@ title: "FAQ"
 {:toc}
 
 ---
-#### Frequently Asked Questions about Rhino
 
 ## How do I create a Java array from JavaScript?
 
 You must use Java reflection. For instance, to create an array of java.lang.String of length five, do
 
-```
+```js
 var stringArray = java.lang.reflect.Array.newInstance(java.lang.String, 5);
 ```
 
 Then if you wish to assign the string "hi" to the first element, simply execute `stringArray[0] = "hi"`. Creating arrays of primitive types is slightly different: you must use the TYPE field. For example, creating an array of seven ints can be done with the code
 
-```
+```js
 var intArray = java.lang.reflect.Array.newInstance(java.lang.Integer.TYPE, 7);
 ```
 

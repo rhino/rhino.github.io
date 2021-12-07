@@ -1,6 +1,7 @@
 ---
 title: "Scopes and contexts"
 ---
+
 # Scopes and contexts
 {: .no_toc }
 
@@ -21,13 +22,13 @@ The Rhino Context object is used to store thread-specific information about the 
 
 To associate the current thread with a Context, simply call the `enter` method of Context:
 
-```
+```java
 Context cx = Context.enter();
 ```
 
 Once you are done with execution, simply exit the Context:
 
-```
+```java
 Context.exit();
 ```
 
@@ -43,7 +44,7 @@ It's important to understand that a scope is independent of the Context that cre
 
 A top-level scope is created by calling `Context.initStandardObjects` to create all the standard objects:
 
-```
+```java
 ScriptableObject scope = cx.initStandardObjects();
 ```
 
@@ -58,7 +59,7 @@ So how are scopes used to look up names? In general, variables are looked up by 
 
 For a more concrete example, let's consider the following script:
 
-```
+```js
 var g = 7;
 
 function f(a) {
@@ -84,7 +85,7 @@ To do this we set an object's prototype. When accessing a property of an object 
 
 So to share information across multiple scopes, we first create the object we wish to share. Typically this object will have been created with `initStandardObjects` and may also have additional objects specific to the embedding. Then all we need to do is create a new object and call its `setPrototype`method to set the prototype to the shared object, and the parent of the new scope to null:
 
-```
+```java
 Scriptable newScope = cx.newObject(sharedScope);
 newScope.setPrototype(sharedScope);
 newScope.setParentScope(null);
@@ -100,13 +101,13 @@ The ECMAScript standard defines that scripts can add properties to all standard 
 
 A notion of a sealed object is a JavaScript extension supported by Rhino and it means that properties can not be added/deleted to the object and the existing object properties can not be changed. Any attempt to modify sealed object throws an exception. To seal all objects in the standard library pass`true` for the sealed argument when calling `Context.initStandardObjects(ScriptableObject, boolean)`:
 
-```
+```java
 ScriptableObject sealedSharedScope = cx.initStandardObjects(null, true);
 ```
 
 This seals only all standard library objects, it does not seal the shared scope itself thus after calling`initStandardObjects`, `sealedSharedScope` can be farther populated with application-specific objects and functions. Then after a custom initialization is done, one can seal the shared scope by calling`ScriptableObject.sealObject()`:
 
-```
+```java
 sealedSharedScope.sealObject();
 ```
 
@@ -114,7 +115,7 @@ Note that currently one needs to explicitly seal any additional properties he ad
 
 Note that currently in order to use Java classes (LiveConnect) from a sealed shared scope you need to pre-load a number of objects needed for LiveConnect into the scope before it gets sealed. These objects would normally be lazy loaded but the lazy loading fails if the scope is sealed.
 
-```
+```java
 ScriptableObject sealedSharedScope  = cx.initStandardObjects(null, true);
 
 // Force the LiveConnect stuff to be loaded.
@@ -135,7 +136,7 @@ The [DynamicScopes example](https://github.com/mozilla/rhino/examples/DynamicSco
 
 The key things to determine in setting up scopes for your application are
 
-1.  What scope should global variables be created in when your script executes an assignment to an undefined variable, and
-3.  What variables should your script have access to when it references a variable?
+1. What scope should global variables be created in when your script executes an assignment to an undefined variable, and
+2. What variables should your script have access to when it references a variable?
 
 The answer to 1 determines which scope should be the ultimate parent scope: Rhino follows the parent chain up to the top and places the variable there. After you've constructed your parent scope chain, the answer to question 2 may indicate that there are additional scopes that need to be searched that are not in your parent scope chain. You can add these as prototypes of scopes in your parent scope chain. When Rhino looks up a variable, it starts in the current scope, walks the prototype chain, then goes to the parent scope and its prototype chain, until there are no more parent scopes left.

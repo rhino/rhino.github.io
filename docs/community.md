@@ -16,7 +16,7 @@ nav_order: 3
 ---
 Have a question that you can't find answer to in the [Rhino documentation](./_docs/documentation.md)? Here are some additional resources for help:
 
-#### Mailing List
+## Mailing List
 
 Rhino discussions happen on the [mozilla-rhino](https://groups.google.com/group/mozilla-rhino) group on Google Groups.
 
@@ -24,7 +24,7 @@ There is a much older group, [mozilla.dev.tech.js-engine.rhino](news://news.mozi
 
 The [mozilla.dev.tech.js-engine](news://news.mozilla.org/mozilla.dev.tech.js-engine) newsgroup answers questions about the C implementation of JavaScript, and was also used for answering questions about Rhino until September 27, 2007. To view archived messages _earlier than_ September 27, 2007, try [Google group for the earlier newsgroup](https://groups.google.com/group/mozilla.dev.tech.js-engine/topics).
 
-#### Bug System
+## Bug System
 
 The best way to enter Rhino bugs to enter an [issue in GitHub.](https://github.com/mozilla/rhino/issues)
 

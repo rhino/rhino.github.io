@@ -1,6 +1,7 @@
 ---
 title: "JavaScript Runtime"
 ---
+
 # {{ page.title }}
 {: .no_toc }
 
@@ -13,6 +14,7 @@ title: "JavaScript Runtime"
 {:toc}
 
 ---
+
 ## Interpretation
 
 Beginning with Rhino 1.4 Release 2, an interpretive mode is supported. When scripts are compiled in interpretive mode, an internal representation of the compiled form is created and stored rather than generating a Java class. Execution proceeds by evaluating this compiled form using support routines in Rhino.
@@ -52,7 +54,7 @@ Instead, every property accessor method in [Scriptable](https://mozilla.github.i
 
 Host objects are JavaScript objects that provide special access to the host environment. For example, in a browser environment, the Window and Document objects are host objects.
 
-The easiest way to define new host objects is by using [ScriptableObject.defineClass()](https://p-bakker.github.io/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-). This method defines a set of JavaScript objects using a Java class. Several of the (examples)[examples.md] define host objects this way.
+The easiest way to define new host objects is by using [ScriptableObject.defineClass()](https://p-bakker.github.io/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-). This method defines a set of JavaScript objects using a Java class. Several of the [examples](examples.md) define host objects this way.
 
 If the services provided by `defineClass` are insufficient, try other methods of [ScriptableObject](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html) and [FunctionObject](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/FunctionObject.html), such as `defineProperty` and `defineFunctionProperties`.
 

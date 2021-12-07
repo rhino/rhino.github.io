@@ -13,7 +13,8 @@ title: Overview
 {:toc}
 
 ---
-### Introduction
+
+## Introduction
 
 Most people who have used [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) before have done so by adding scripts to their [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) web pages. However, Rhino is an implementation of the core language only and doesn't contain objects or methods for manipulating HTML documents.
 
@@ -25,7 +26,7 @@ Rhino contains
 - [A JavaScript compiler](../_tools/javascript_compiler.md) to transform JavaScript source files into Java class files
 - [A JavaScript debugger](../_tools/debugger.md) for scripts executed with Rhino
 
-### Language
+## Language
 
 The JavaScript language itself is standardized by [Standard ECMA-262 ECMAScript: A general purpose, cross-platform programming language](https://www.ecma-international.org/publications/standards/Ecma-262.htm). Rhino 1.3 and greater conform to Edition 3 of the Standard.
 
@@ -35,15 +36,15 @@ In addition, Rhino has implemented JavaAdapters, which allows JavaScript to impl
 
 Numerous books and tutorials on JavaScript are available. [JavaScript: The Definitive Guide](https://www.oreilly.com/catalog/jscript5/) is recommended, and contains a chapter on Rhino.
 
-### Internationalization
+## Internationalization
 
 The messages reported by the JavaScript engine are by default retrieved from the property file `org/mozilla/javascript/resources/Messages.properties`. If other properties files with extensions corresponding to the current locale exist, they will be used instead.
 
-### JavaScript Language Versions
+## JavaScript Language Versions
 
 Some behavior in the JavaScript engine is dependent on the language version. In browser embeddings, this language version is selected using the `LANGUAGE` attribute of the `SCRIPT` tag with values such as `"JavaScript1.2"`.
 
-### Security
+## Security
 
 The security features in Rhino provide the ability to track the origin of a piece of code (and any pieces of code that it may in turn generate). These features allow for the implementation of a traditional URL-based security policy for JavaScript as in Netscape Navigator. Embeddings that trust the JavaScript code they execute may ignore the security features.
 
