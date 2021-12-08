@@ -19,7 +19,7 @@ nav_order: -4
 This is a log of changes since the release of Rhino 1.5 Release 3.
 
 ## Rhino debug API changes
-A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](./1.5r3-debug-api-changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
+A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](1.5r3-debug-api-changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
 
 ## WrapFactory introduced, WrapHandler deprecated
 A design flaw in the WrapHandler interface (a call to a Java contructor from JavaScript would result in a call to wrap the result, which would then be cast to a Scriptable) inspired the deprecation of that interface and the introduction of a new class, WrapFactory, that contains a new method called on the result of a constructor call and can be customized by application if necessary.
@@ -66,7 +66,7 @@ The following Rhino reports in Bugzilla where resolved for Rhino 1.5 Release 4.
 - [115717](http://bugzilla.mozilla.org/show_bug.cgi?id=115717) java.lang.ArrayIndexOutOfBoundsException on with/try/finally
 - [120194](http://bugzilla.mozilla.org/show_bug.cgi?id=120194) JS toInt32(x) conversion doesn't match ECMAScript definition
 - [122167](http://bugzilla.mozilla.org/show_bug.cgi?id=122167) string.replace() placeholder '$1' not working
-- [123439](http://bugzilla.mozilla.org/show_bug.cgi?id=123439) Backreferences /(a)? etc./ must hold |undefined| if not used
+- [123439](http://bugzilla.mozilla.org/show_bug.cgi?id=123439) Backreferences /(a)? etc./ must hold `undefined` if not used
 - [124508](http://bugzilla.mozilla.org/show_bug.cgi?id=124508) regexp.lastIndex should be integer-valued double, not uint32
 - [124900](http://bugzilla.mozilla.org/show_bug.cgi?id=124900) arguments object storing duplicate parameter values
 - [125562](http://bugzilla.mozilla.org/show_bug.cgi?id=125562) Regexp performance improvement
@@ -75,7 +75,7 @@ The following Rhino reports in Bugzilla where resolved for Rhino 1.5 Release 4.
 - [128468](http://bugzilla.mozilla.org/show_bug.cgi?id=128468) java.io.NotSerializableException: org.mozilla.javascript.NativeError
 - [129365](http://bugzilla.mozilla.org/show_bug.cgi?id=129365) Incorrect licensing in dtoa.java
 - [132217](http://bugzilla.mozilla.org/show_bug.cgi?id=132217) delete on global function should not delete the function
-- [136893](http://bugzilla.mozilla.org/show_bug.cgi?id=136893) Rhino treatment of |for(i in undefined)|, |for(i in null)|
+- [136893](http://bugzilla.mozilla.org/show_bug.cgi?id=136893) Rhino treatment of `for(i in undefined)`, `for(i in null)`
 - [137181](http://bugzilla.mozilla.org/show_bug.cgi?id=137181) delete on an arguments[i] not working correctly
 - [145791](http://bugzilla.mozilla.org/show_bug.cgi?id=145791) ECMA conformance: Function.prototype.apply(), Function.prototype.call()
 - [149285](http://bugzilla.mozilla.org/show_bug.cgi?id=149285) Complier does not report the correct line number on SyntaxError:Invalid assignment left-hand side.

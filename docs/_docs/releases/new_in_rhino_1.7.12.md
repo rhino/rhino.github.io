@@ -18,9 +18,9 @@ nav_order: -25
 ---
 ## XML external entities disabled by default
 
-As of this release, Rhino makes "XML external entity injections" more difficult by disabling fetching of external DTDs and stylesheets by default, as recommended in the (OWASP Cheat Sheet)[https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md]. Even though this may break some existing projects, the fact that this vulnerability is in the OWASP top 10 makes it important enough to change the default.
+As of this release, Rhino makes "XML external entity injections" more difficult by disabling fetching of external DTDs and stylesheets by default, as recommended in the [OWASP Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md). Even though this may break some existing projects, the fact that this vulnerability is in the OWASP top 10 makes it important enough to change the default.
 
-Developers who still need this old capability can re-enable it by setting the Context feature flag FEATURE_ENABLE_XML_SECURE_PARSING to false. (The default is true.)
+Developers who still need this old capability can re-enable it by setting the `Context` feature flag `FEATURE_ENABLE_XML_SECURE_PARSING` to false. (The default is true.)
 
 ## New JAR for embedding use cases
 
@@ -33,10 +33,10 @@ Developers who typically embed "rhino.jar" might consider embedding "rhino-runti
 Thanks to the following developers for the contributions below!
 
 Aditya Pal (1):
-- Fix syntax error for comments in array (#607)
+- Fix syntax error for comments in array [#607](https://github.com/mozilla/rhino/issues/607)
 
 Chris Smith (1):
-- Adding secure configuration for XML parsers (#600)
+- Adding secure configuration for XML parsers [#600](https://github.com/mozilla/rhino/issues/600)
 
 Gregory Brail (12):
 - Update versions for 1.7.12 release.
@@ -53,17 +53,17 @@ Gregory Brail (12):
 - Undo setting some members "final".
 
 Ivan Di Francesco (1):
-- Fix warnings (#596)
+- Fix warnings [#596](https://github.com/mozilla/rhino/issues/596)
 
 Roland Praml (2):
 - FIX: NativeJavaObject.getDefaultValue recognizes numbers correctly
-- #511 fixing InterfaceAdapter abstract name lookup.
+- [#511](https://github.com/mozilla/rhino/issues/511) fixing InterfaceAdapter abstract name lookup.
 
 Stijn Kliemesch (7):
 - Private static method ScriptRuntime.enumInitOrder(Context,IdEnumeration) no longer expects given IdEnumeration's property obj to be of type ScriptableObject specifically, only of type SymbolScriptable.
 - Added testclass IterableTest to test iterable implementations, currently with one testcase for a host object, specifically one that uses Array Iterator.
 - Added more tests to IterableTest.
-- Fix for #616 (#617)
+- Fix for [#616](https://github.com/mozilla/rhino/issues/616) [#617](https://github.com/mozilla/rhino/issues/617)
 - Fixes for calling several Object.prototype members.
 - Fixed dynamic scoping for implementations of Object.create and Object.defineProperties
 - Testcase for dynamic scoping and Object.create.
@@ -73,13 +73,13 @@ nename0 (2):
 - implement Array.includes to align to specs
 
 RBRi (20):
-- fix for Map/Set working with ConsString as key also; closes #583
-- fix propertyIsEnumerable when using an index to access string; closes #582
-- ignore surplus search/match/replace parameters; closes #581
+- fix for Map/Set working with ConsString as key also; closes [#583](https://github.com/mozilla/rhino/issues/583)
+- fix propertyIsEnumerable when using an index to access string; closes [#582](https://github.com/mozilla/rhino/issues/582)
+- ignore surplus search/match/replace parameters; closes [#581](https://github.com/mozilla/rhino/issues/581)
 - add support for setPrototypeOf
 - fixed imports
-- RangeError should be throw if the argument of Number.prototype.toFixed is less than 0 fixes #587
-- fix interpreter fallback when using streams (fixes #592)
+- RangeError should be throw if the argument of Number.prototype.toFixed is less than 0 fixes [#587](https://github.com/mozilla/rhino/issues/587)
+- fix interpreter fallback when using streams (fixes [#592](https://github.com/mozilla/rhino/issues/592))
 - Parser already always reads the reader into a string. Move this reader handling to the Context to be able to fall back to the interpreter in all cases.
 - fix imports
 - functions declared as var f = function f() {...} within a function should not impact higher scope variable with the same name
@@ -92,4 +92,4 @@ RBRi (20):
 - fix BYTES_PER_ELEMENT prototype property
 - fix TypedArray constructor arity
 - Fix issue with parseInt's handling of leading zeroes
-- #529 (#628)
+- [#529](https://github.com/mozilla/rhino/issues/529) [#628](https://github.com/mozilla/rhino/issues/628)

@@ -20,10 +20,10 @@ nav_order: -15
 
 Rhino has supported Continuations for some time now, but there wasn't a great way to interact with continuations from Java. Continuations have been useful with in server-side scripting, since it allows for saving and restarting JavaScript execution, possibly with serializing the execution state when stopped. With Rhino 1.7R2, methods in `org.mozilla.javascript.Context` allow for control from Java:
 
-- [executeScriptWithContinuations](javadocs/org/mozilla/javascript/context.html#executescriptwithcontinuations(org.mozilla.javascript.script,%20org.mozilla.javascript.scriptable)) - Execute script that may pause execution by capturing a continuation.
-- `callFunctionWithContinuations - Call function that may pause execution by capturing a continuation.`
-- [captureContinuation](javadocs/org/mozilla/javascript/context.html#capturecontinuation()) - Capture a continuation from the current execution.
-- [resumeContinuation](javadocs/org/mozilla/javascript/context.html#resumecontinuation(java.lang.object,%20org.mozilla.javascript.scriptable,%20java.lang.object)) - Restarts execution of the JavaScript suspended at the call to captureContinuation.
+- [executeScriptWithContinuations](/rhino/javadocs/org/mozilla/javascript/context.html#executescriptwithcontinuations(org.mozilla.javascript.script,%20org.mozilla.javascript.scriptable)) - Execute script that may pause execution by capturing a continuation.
+- [callFunctionWithContinuations](/rhino/javadoc/org/mozilla/javascript/Context.html#callFunctionWithContinuations-org.mozilla.javascript.Callable-org.mozilla.javascript.Scriptable-java.lang.Object:A-) - Call function that may pause execution by capturing a continuation.
+- [captureContinuation](/rhino/javadocs/org/mozilla/javascript/context.html#capturecontinuation()) - Capture a continuation from the current execution.
+- [resumeContinuation](/rhino/javadocs/org/mozilla/javascript/context.html#resumecontinuation(java.lang.object,%20org.mozilla.javascript.scriptable,%20java.lang.object)) - Restarts execution of the JavaScript suspended at the call to captureContinuation.
 
 For example, if you had a Java class MyClass with a method f(). Say that you wanted to pause execution of a script when f() was called. You could call captureContinuation, which wraps up all the state of the current execution and returns it as a ContinuationPending object. ContinuationPending is also an exception; you indicate to Rhino that you want to suspend execution by throwing the exception:
 
@@ -131,7 +131,7 @@ See [Rhino License](../../license.md) for details on the new license for files i
 
 ## Doctest
 
-Python is a fertile ground of good ideas, and we've seen a number of Python's ideas surface in JavaScript recently. JavaScript 1.7's [generators](https://web.archive.org/web/20210502042346mp_/https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Generators)and [array comprehensions](https://web.archive.org/web/20210502042346mp_/https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Array_comprehensions) are two recent examples.
+Python is a fertile ground of good ideas, and we've seen a number of Python's ideas surface in JavaScript recently. JavaScript 1.7's [generators](https://web.archive.org/web/20210502042346mp_/https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Generators) and [array comprehensions](https://web.archive.org/web/20210502042346mp_/https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7#Array_comprehensions) are two recent examples.
 
 Rhino 1.7R2 contains another Python idea: [doctest](https://docs.python.org/lib/module-doctest.html). This is a function that will test snippets of shell sessions. It gets its name from its use testing these snippets that appear in documentation comments, but it turns out to be a very convenient way to write tests more generally.
 

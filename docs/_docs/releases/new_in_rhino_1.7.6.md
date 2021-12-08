@@ -72,7 +72,7 @@ André Bargull (60):
 - Context: Use StackTraceElement API to traverse stack-trace
 - NativeArray: address review comment from hns
 - Updated tests files per instructions in o.m.j.tests.MozillaSuiteTest
-- Patch for Bug 783797 ("Function calls across multiple global scopes are not handled properly")
+- [Bug 783797](https://bugzilla.mozilla.org/show_bug.cgi?id=783797) Function calls across multiple global scopes are not handled properly
 - Silence warnings in ClassFileWriter
 - Add missing @Deprecated annotations
 - Add missing @Override annotations
@@ -85,9 +85,9 @@ André Bargull (60):
 - Address review comments from hns
 - Generators save and later restore the current stack when processing the 'yield' operation. Our current implementation for restoring the stack unfortunately confuses the Java classfile verifier, so at class load time a VerifierError is thrown. This happens because the verifier can no longer ensure that the proper types are placed on the stack, since the stack-state is saved in a simple Object[]. Re-ordering a few operations is only necessary so the verifier will again accept the generated class. But this is only done for generators because it creates slightly less efficient code compared to the standard case.
 - Add doctest and update comments with proper bug number
-- Patch for Bug 782363 ("Increment/Decrement alters const variables")
-- Patch for Bug 780458 ("Math.IEEEremainder makes ToInt32 slow for non-integer values") (V8):
-- Patch for Bug 789277 ("JSC: "missing ; after statement" message prints out for the line after the problem one")
+- [Bug 782363](https://bugzilla.mozilla.org/show_bug.cgi?id=782363) Increment/Decrement alters const variables
+- [Bug 780458](https://bugzilla.mozilla.org/show_bug.cgi?id=780458) Math.IEEEremainder makes ToInt32 slow for non-integer values (V8):
+- [Bug 789277](https://bugzilla.mozilla.org/show_bug.cgi?id=789277) JSC: "missing ; after statement" message prints out for the line after the problem one
 
 C. Scott Ananian (1):
 - Don't swallow empty lines in doctest; split lines on Mac/Windows/Unix.
@@ -113,9 +113,9 @@ Gregory Brail (31):
 - Manually add .gitignore additions from @sghill.
 - Added a bit more to the README including content from @shirishp
 - Add a NOTICE with the V8 copyright message.
-- Move anba's new DoubleConversion code into the package with the     rest of the code derived from V8.
-- Remove retrotranslator code to generate 1.4-compatible bytecode.     Switch bytecode generation to Java 6.
-- Remove code and build artifacts pointing to the "old E4X" implementation,     based on XML Beans.
+- Move anba's new DoubleConversion code into the package with the rest of the code derived from V8.
+- Remove retrotranslator code to generate 1.4-compatible bytecode. Switch bytecode generation to Java 6.
+- Remove code and build artifacts pointing to the "old E4X" implementation, based on XML Beans.
 - Remove unused XML beans-based E4X implementation.
 - One last vestige of XML Beans.
 - Re-generate ID map on NativeArray.
@@ -137,11 +137,11 @@ Gregory Brail (31):
 - Add "initSafeStandardObjects" to create standard objects with no Java class access whatsoever.
 
 Ievgenii.Shepeliuk (2):
-- `findIndex' implementation
+- `findIndex` implementation
 - more V8 compatibility
 
 Raymond Auge (1):
-- rhino exits the JVM even when run as a subshell of another java shell - bug-835147
+- [Bug 835147](https://bugzilla.mozilla.org/show_bug.cgi?id=835147) rhino exits the JVM even when run as a subshell of another java shell
 
 Travis Ennis (2):
 - Added the Javascript 1.8 String methods trimLeft and trim Right.
@@ -155,7 +155,7 @@ sghill (1):
 
 tntim96 (5):
 - 'undefined' pattern should be treated as empty string in RegExp constructor http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.4.1 https://sourceforge.net/p/htmlunit/bugs/1599/
-- Bug 798642. AST 'toSource' on getter/setter mistakenly adding 'function' keyword https://bugzilla.mozilla.org/show_bug.cgi?id=798642
-- Bug 800616. Fix AST 'toSource' for Octal and Hexadecimal literals https://bugzilla.mozilla.org/show_bug.cgi?id=800616
+- [Bug 798642]( https://bugzilla.mozilla.org/show_bug.cgi?id=798642) AST 'toSource' on getter/setter mistakenly adding 'function' keyword
+- [Bug 800616](https://bugzilla.mozilla.org/show_bug.cgi?id=800616) Fix AST 'toSource' for Octal and Hexadecimal literals
 - Fix AST empty switch to source
 - Fix compile encoding error 'unmappable character for encoding ASCII'

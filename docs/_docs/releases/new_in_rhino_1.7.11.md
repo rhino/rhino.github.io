@@ -35,13 +35,13 @@ A future release will change the default language version of the command line to
 This release contains contributions from 15 developers. Thanks for all your hard work!
 
 Attila Szegedi (7):
-- Improvements to MemberBox (#438)
+- Improvements to MemberBox [#438](https://github.com/mozilla/rhino/issues/438)
 - Labmdify usages of ContextAction
 - Make ContextAction generic.
 - API for comparing continuation implementations
 - Algorithm for structural equality comparison of object graphs
 - Use structural equality as the equality algorithm for Interpreter.CallFrame, which serves as the NativeContinuation implementation.
-- Add workarounds for #437 and #449
+- Add workarounds for [#437](https://github.com/mozilla/rhino/issues/437) and [#449](https://github.com/mozilla/rhino/issues/449)
 
 Dimitar Nestorov (1):
 - Update README.md
@@ -52,7 +52,7 @@ Dirk Hogan (1):
 Gregory Brail (18):
 - Prepare for next iteration.
 - Support replacing prototype functions of native objects.
-- Fix NullPointerException in __defineGetter__
+- Fix NullPointerException in \_\_defineGetter\_\_
 - Fix a problem with standard objects that have Symbols in their  prototypes.
 - Implement the built-in Set and Map classes for ES6.
 - Add WeakMap and WeakSet on top of the Map and Set work.
@@ -71,8 +71,8 @@ Gregory Brail (18):
 - Fix a parsing regression.
 
 Igor Kuzmanenko (2):
-- fixes XmlMemberGet toSource implementation (#483)
-- fixes position for ParenthesizedExpression nodes (#129)
+- fixes XmlMemberGet toSource implementation [#483](https://github.com/mozilla/rhino/issues/483)
+- fixes position for ParenthesizedExpression nodes [#129](https://github.com/mozilla/rhino/issues/129)
 
 Markus Sunela (1):
 - Add manual OSGi manifest
@@ -84,8 +84,8 @@ Nedelcho Delchev (1):
 - Update README.md
 
 RBRi (2):
-- some fixes/enhancements for the typed array support (#436)
-- Array fixes (#467)
+- some fixes/enhancements for the typed array support [#436](https://github.com/mozilla/rhino/issues/436)
+- Array fixes [#467](https://github.com/mozilla/rhino/issues/467)
 - fix all javadoc errors and all javadoc html warnings
 - method Global#version(xxx) should return the new version identifier if the version was updated
 - add more info to the error message
@@ -100,11 +100,11 @@ RBRi (2):
 - Use as many test262 tests as possible to check our quality
 - implement missing Math functions
 - disable some slow tests
-- Support for `arguments` object as TypedArray constructor argument this is the same as #297 but includes a simple test.
+- Support for `arguments` object as TypedArray constructor argument this is the same as [#297](https://github.com/mozilla/rhino/issues/297) but includes a simple test.
 - fix issue 437
 - use the system line separator for code generation
 - remove work around for 437
-- fix #449 also and remove the work around from EqualObjectGraphs
+- fix [#449](https://github.com/mozilla/rhino/issues/449) also and remove the work around from EqualObjectGraphs
 - add @Override and some more cleanup
 - fix ctor called with date arg
 - valueOf has to be called without any args
@@ -132,7 +132,7 @@ RBRi (2):
 - fix null/undefined handling add first array includes impl
 - fix some array length handling border cases
 - NativeArray cleanup more error output for Test262SuiteTest
-- fix for #531 - using a symbol as array index crashes with a class cast exception
+- fix for [#531](https://github.com/mozilla/rhino/issues/531) - using a symbol as array index crashes with a class cast exception
 - Update Jacoco version
 - functions are valid keys for WeakMap/WeakSet
 - use valueOf
@@ -141,7 +141,7 @@ RBRi (2):
 - fix unused import
 - another jdk check no longer required
 - fix build
-- add (modified) test case from #135
+- add (modified) test case from [#135](https://github.com/mozilla/rhino/issues/135)
 - first simple version of copyWithin
 - first array.of impl
 
@@ -149,13 +149,13 @@ Raphaël Jakse (1):
 - Test function arity and length properties
 
 Ravi Kishore (1):
-- Retain of comments and their position in the actual code after parsing. (#465)
+- Retain of comments and their position in the actual code after parsing. [#465](https://github.com/mozilla/rhino/issues/465)
 
 Stijn Kliemesch (1):
-- Added testcase for #510
+- Added testcase for [#510](https://github.com/mozilla/rhino/issues/510)
 
 Sébastien Doeraene (2):
-- Fix #448: Correctly wrap the result of Math.imul as an Int32.
+- Fix [#448](https://github.com/mozilla/rhino/issues/448): Correctly wrap the result of Math.imul as an Int32.
 - Fix the conversions in typedarrays.Conversions.
 
 Travis Haagen (2):
@@ -163,8 +163,8 @@ Travis Haagen (2):
 - Created UrlModuleSourceProviderTest
 
 nabice (2):
-- Fix #533 AstNode.setParent() causes a position error
-- test for #533
+- Fix [#533](https://github.com/mozilla/rhino/issues/533) AstNode.setParent() causes a position error
+- test for [#533](https://github.com/mozilla/rhino/issues/533)
 
 raphj (1):
 - Override getArity

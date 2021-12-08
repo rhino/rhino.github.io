@@ -54,11 +54,16 @@ See [const](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statem
 
 ## New E4X Implementation using Java 1.5 DOM
 
-Since Rhino 1.6R1, Rhino has used the Apache XMLBeans library to support E4X. In Rhino 1.6R6 the E4X support has been rewritten to rely solely on the DOM3 APIs supported natively by Java 1.5. (Pre-1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser.) As of this release, the XMLBeans implementation remains the default if XMLBeans classes are found on the classpath; otherwise, the native DOM implementation is used if DOM3 is present. If neither XMLBeans nor DOM3 are present, E4X is not available.
+Since Rhino 1.6R1, Rhino has used the Apache XMLBeans library to support E4X. In Rhino 1.6R6 the E4X support has been rewritten to rely solely on the DOM3 APIs supported natively by Java 1.5.
+Pre-1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
+As of this release, the XMLBeans implementation remains the default if XMLBeans classes are found on the classpath; otherwise, the native DOM implementation is used if DOM3 is present.
+If neither XMLBeans nor DOM3 are present, E4X is not available.
 
 ## Integration with Java security architecture
 
-Rhino 1.6R6 adds org.mozilla.javascript.PolicySecurityController as a concrete implementation of an org.mozilla.javascript.SecurityController and the preferred way of integrating with Java security architecture. When no security controller is in use, generated classes and scripts run in the ProtectionDomain of Rhino classes. Wrapped access to system properties and creation of class loaders into AccessController.doPrivileged() to nicely play in secured environments.
+Rhino 1.6R6 adds org.mozilla.javascript.PolicySecurityController as a concrete implementation of an org.mozilla.javascript.SecurityController and the preferred way of integrating with Java security architecture.
+When no security controller is in use, generated classes and scripts run in the ProtectionDomain of Rhino classes.
+Wrapped access to system properties and creation of class loaders into AccessController.doPrivileged() to nicely play in secured environments.
 
 ## Test Drivers
 
@@ -80,4 +85,4 @@ See [bug 382457](https://bugzilla.mozilla.org/show_bug.cgi?id=382457) for more d
 
 ## Bug fixes
 
-This [list](https://bugzilla.mozilla.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=Rhino%20graveyard&target_milestone=1.6R6&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&resolution=FIXED&emailassigned_to1=1&emailtype1=exact&email1=&emailassigned_to2=1&emailreporter2=1&emailqa_contact2=1&emailtype2=exact&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=|bug) shows all the bugs (and enhancements) fixed in Rhino 1.6R6.
+This [list](https://bugzilla.mozilla.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=Rhino%20graveyard&target_milestone=1.6R6&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&resolution=FIXED&emailassigned_to1=1&emailtype1=exact&email1=&emailassigned_to2=1&emailreporter2=1&emailqa_contact2=1&emailtype2=exact&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit) shows all the bugs (and enhancements) fixed in Rhino 1.6R6.

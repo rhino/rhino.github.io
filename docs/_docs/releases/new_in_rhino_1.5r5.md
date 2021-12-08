@@ -121,6 +121,4 @@ The interpreted mode contains significantly less restrictions on size and comple
 See [Bugzilla 225831](https://bugzilla.mozilla.org/show_bug.cgi?id=225831).
 
 ## Resolved Bugzilla reports
-The full list of Bugzilla reports addressed in Rhino 1.5R5 can be obtained with the following Bugzilla query:
-http://bugzilla.mozilla.org/buglist.cgi?product=Rhino%20graveyard&target_milestone=1.5R5&bug_status=RESOLVED&bug_status=VERIFIED
-which searches bugzilla.mozilla.org for all resolved or verified bugs with the product set to Rhino and the target milestone set to 1.5R5.
+The full list of Bugzilla reports addressed in Rhino 1.5R5 can be obtained with the following Bugzilla [query](http://bugzilla.mozilla.org/buglist.cgi?product=Rhino%20graveyard&target_milestone=1.5R5&bug_status=RESOLVED&bug_status=VERIFIED) which searches bugzilla.mozilla.org for all resolved or verified bugs with the product set to Rhino and the target milestone set to 1.5R5.
