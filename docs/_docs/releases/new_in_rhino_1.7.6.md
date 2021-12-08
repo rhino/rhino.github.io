@@ -19,7 +19,7 @@ nav_order: -19
 Merged many of the outstanding pull requests in the GitHub repo.
 
 High-level changes include the following:
-- Many compatibility fixes for Date, Array, String, and others (André Bargull)
+- Many compatibility fixes for Date, Array, String, and others (Andrï¿½ Bargull)
 - Array.find() and findIndex() (Evgeny Shepelyuk)
 - String.trimLeft() and trimRight() (Travis Ennis)
 - AST and "toSource" fixes (tntim96)
@@ -27,7 +27,7 @@ High-level changes include the following:
 - Support for typed arrays (Greg Brail)
 - Support for attaching "external data" as the indexed properties of any object (Greg Brail)
 
-André Bargull (60):
+AndrÃ© Bargull (60):
 - NativeDate: Date.length and Date.UTC.length is 7
 - NativeDate: Fix bug 732779 (Date.prototype.setXXX functions don't evaluate all parameters)
 - NativeDate: Date.prototype.toJSON uses [[GET]] to obtain the "toISOString" property

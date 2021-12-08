@@ -145,7 +145,7 @@ RBRi (2):
 - first simple version of copyWithin
 - first array.of impl
 
-Rapha�l Jakse (1):
+Raphaël Jakse (1):
 - Test function arity and length properties
 
 Ravi Kishore (1):
@@ -154,7 +154,7 @@ Ravi Kishore (1):
 Stijn Kliemesch (1):
 - Added testcase for #510
 
-S�bastien Doeraene (2):
+Sébastien Doeraene (2):
 - Fix #448: Correctly wrap the result of Math.imul as an Int32.
 - Fix the conversions in typedarrays.Conversions.
 
