@@ -16,12 +16,9 @@ nav_order: -20.2
 {:toc}
 
 ---
-This release contains fixes for a few important bugs that have caught Rhino users out in the
-field.
+This release contains fixes for a few important bugs that have caught Rhino users out in the field.
 
-- Do not throw a Java exception from array.prototype.sort() no matter how weird the user-supplied
-comparator function is. This is a major difference between JavaScript and Java and has caused
-us to avoid using "Arrays.sort" on JavaScript arrays.
+- Do not throw a Java exception from array.prototype.sort() no matter how weird the user-supplied comparator function is. This is a major difference between JavaScript and Java and has caused us to avoid using "Arrays.sort" on JavaScript arrays.
 - Fix incorrect offsets in the "DataView" class.
 
 It also includes several other fixes:
@@ -31,8 +28,7 @@ It also includes several other fixes:
 - Make the Symbol implementation match the spec (for VERSION_ES6 and up only).
 - Avoid throwing internal Java exceptions for certain native objects in "toJSON".
 - Allow subclassing of ContinuationPending.
-- For VERSION_ES6 and up, sort properties in the spec-defined order (int property names
-first).
+- For VERSION_ES6 and up, sort properties in the spec-defined order (int property names first).
 - Fix stack overflow in string concatenation.
 - Improve performance of ConsString.toString
 

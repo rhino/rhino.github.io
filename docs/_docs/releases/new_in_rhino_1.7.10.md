@@ -18,9 +18,7 @@ nav_order: -23
 ---
 (Note: This release is from April, 2018 -- I failed to update the GitHub release notes for it until 2019.)
 
-This release fixes a regression introduced in version 1.7.7.2 that caused the
-"propertyIsEnumerable" to throw an exception when used with String and typed array objects,
-and possibly with custom user-written objects as well.
+This release fixes a regression introduced in version 1.7.7.2 that caused the "propertyIsEnumerable" to throw an exception when used with String and typed array objects, and possibly with custom user-written objects as well.
 
 [Issue 415](https://github.com/mozilla/rhino/issues/415)
 

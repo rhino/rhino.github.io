@@ -18,21 +18,15 @@ nav_order: -22
 ---
 ## March 15, 2018
 
-This release fixes a [potential ArrayIndexOutOfBoundsException](https://github.com/mozilla/rhino/issues/390)
-that was introduced in 1.7.8. Since it's potentially pretty serious, projects currently using 1.7.8
-should switch to this new release.
+This release fixes a [potential ArrayIndexOutOfBoundsException](https://github.com/mozilla/rhino/issues/390) that was introduced in 1.7.8. Since it's potentially pretty serious, projects currently using 1.7.8 should switch to this new release.
 
 [Issue 390](https://github.com/mozilla/rhino/issues/390)
 
-In addition, there is a new flag on Context called "FEATURE_INTEGER_WITHOUT_DECIMAL_PLACE."
-If set, Rhino will work harder to display numbers in integer form rather than in floating-point
-form. This feature is currently disabled by default, although if it proves popular than we can
-consider enabling it in the future.
+In addition, there is a new flag on Context called "FEATURE_INTEGER_WITHOUT_DECIMAL_PLACE." If set, Rhino will work harder to display numbers in integer form rather than in floating-point form. This feature is currently disabled by default, although if it proves popular than we can consider enabling it in the future.
 
 [PR 398](https://github.com/mozilla/rhino/pull/398)
 
-At language level "ES6" and above, ToNumber conversion is now more compliant to the spec. (This
-change is disabled for older language levels to prevent a problem with backward compatibility.)
+At language level "ES6" and above, ToNumber conversion is now more compliant to the spec. (This change is disabled for older language levels to prevent a problem with backward compatibility.)
 
 [PR 383](https://github.com/mozilla/rhino/pull/383)
 

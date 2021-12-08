@@ -101,7 +101,7 @@ Elliott Baron (1):
 
 Evgeny Shepelyuk (2):
 - find and findIndex initial impl
-- Improving test framework     + one JUnit class = one JS suite     + reporting JS stacktrace on error     + load function is available in JS     + separate file for JS assertions
+- Improving test framework + one JUnit class = one JS suite + reporting JS stacktrace on error + load function is available in JS + separate file for JS assertions
 
 Gregory Brail (31):
 - Update versions for next iteration.
@@ -119,22 +119,22 @@ Gregory Brail (31):
 - Remove unused XML beans-based E4X implementation.
 - One last vestige of XML Beans.
 - Re-generate ID map on NativeArray.
-- Initial checkin of typed arrays and tests from V8.     Fix bad capitalization.
+- Initial checkin of typed arrays and tests from V8. Fix bad capitalization.
 - Fix some integer encoding and add more test cases.
-- Switch typed array tests to use Evgeny's framework for running them.     Make them work only with version 1.8.
+- Switch typed array tests to use Evgeny's framework for running them. Make them work only with version 1.8.
 - Make typed arrays only appear in 1.8.
 - Add List implementation for all native arrays.
-- Add "Error" to the set of standard Error constructors     that could go down the new code path to create an error.
-- Complete List implementation for typed arrays.     Write typed array unit tests for the List implementation.
+- Add "Error" to the set of standard Error constructors that could go down the new code path to create an error.
+- Complete List implementation for typed arrays. Write typed array unit tests for the List implementation.
 - Do not double-initialize Error.
-- Make loading of typed array classes lazy.     Rename Java classes so that the names are more consistent.
-- Support for V8-style stack trace support:       Error.prepareStackTrace       Error.captureStackTrace       Error.stackTraceLimit     And "V8" format stack traces.
-- Improve efficiency of NativeError via pre-cached Method objects     and reduced number of default fields.
+- Make loading of typed array classes lazy. Rename Java classes so that the names are more consistent.
+- Support for V8-style stack trace support: Error.prepareStackTrace, Error.captureStackTrace, Error.stackTraceLimit And "V8" format stack traces.
+- Improve efficiency of NativeError via pre-cached Method objects and reduced number of default fields.
 - Make "stack" non-enumerable until generated.
-- Add "setExternalArrayData" to ScriptableObject to allow array data     to be stored outside the core object.
+- Add "setExternalArrayData" to ScriptableObject to allow array data to be stored outside the core object.
 - Set default version in shell to "180".
 - Add method to both get and set external array data.
-- Add "initSafeStandardObjects" to create standard objects with     no Java class access whatsoever.
+- Add "initSafeStandardObjects" to create standard objects with no Java class access whatsoever.
 
 Ievgenii.Shepeliuk (2):
 - `findIndex' implementation
@@ -154,8 +154,8 @@ sghill (1):
 - removing old .cvsignore files
 
 tntim96 (5):
-- 'undefined' pattern should be treated as empty string in RegExp constructor     http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.4.1     https://sourceforge.net/p/htmlunit/bugs/1599/
-- Bug 798642. AST 'toSource' on getter/setter mistakenly adding 'function' keyword     https://bugzilla.mozilla.org/show_bug.cgi?id=798642
-- Bug 800616. Fix AST 'toSource' for Octal and Hexadecimal literals     https://bugzilla.mozilla.org/show_bug.cgi?id=800616
+- 'undefined' pattern should be treated as empty string in RegExp constructor http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.4.1 https://sourceforge.net/p/htmlunit/bugs/1599/
+- Bug 798642. AST 'toSource' on getter/setter mistakenly adding 'function' keyword https://bugzilla.mozilla.org/show_bug.cgi?id=798642
+- Bug 800616. Fix AST 'toSource' for Octal and Hexadecimal literals https://bugzilla.mozilla.org/show_bug.cgi?id=800616
 - Fix AST empty switch to source
 - Fix compile encoding error 'unmappable character for encoding ASCII'

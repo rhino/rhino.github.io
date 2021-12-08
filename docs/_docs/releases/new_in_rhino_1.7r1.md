@@ -64,9 +64,8 @@ It's now possible to request instruction callbacks for compiled scripts. This is
 ## `debugger` keyword
 
 Fix [bug 386997](https://bugzilla.mozilla.org/show_bug.cgi?id=386997) - Need to support 'debugger' statement
-Adding the 'debugger' keyword will now result in a breakpoint being hit when
-run in the Rhino debugger. The statement is ignored if the debugger is not
-running or when compiled to Java bytecodes.
+
+Adding the 'debugger' keyword will now result in a breakpoint being hit when run in the Rhino debugger. The statement is ignored if the debugger is not running or when compiled to Java bytecodes.
 
 ## Common package names preloaded
 
@@ -118,7 +117,3 @@ java -cp js.jar org.mozilla.javascript.tools.debugger.Main test.js
 ```
 
 And if anyone would like to contribute changes that allow us to build the debugger without depending on these closed-source licenses, we'd be happy to take those changes into Rhino.
-
----
-
-Norrisboyd 07:03, 13 June 2007 (PDT)

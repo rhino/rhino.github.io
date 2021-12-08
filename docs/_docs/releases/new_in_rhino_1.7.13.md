@@ -18,23 +18,17 @@ nav_order: -26
 ---
 ## Script Engine support
 
-Now that Nashorn has been deprecated, a number of poeple have asked about using
-Rhino with the standard Java "ScriptEngine" interface. This release supports that.
+Now that Nashorn has been deprecated, a number of poeple have asked about using Rhino with the standard Java "ScriptEngine" interface. This release supports that.
 
-However, in order to avoid breaking existing code, the script engine is
-shipped in a separate JAR. Use the "rhino-engine" jar along with the
-standard "rhino" jar to include this feature.
+However, in order to avoid breaking existing code, the script engine is shipped in a separate JAR. Use the "rhino-engine" jar along with the standard "rhino" jar to include this feature.
 
 ## Generator Support
 
-This release supports generators based on the ES6-standard "function *"
-syntaxt.
+This release supports generators based on the ES6-standard "function *" syntaxt.
 
 ## Other important changes
 
-This release also includes a number of quality and consistency fixes from five contributors.
-As always, check out the [compatibility table](http://mozilla.github.io/rhino/compat/engines.html)
-to see where Rhino stands today.
+This release also includes a number of quality and consistency fixes from five contributors. As always, check out the [compatibility table](http://mozilla.github.io/rhino/compat/engines.html) to see where Rhino stands today.
 
 Gregory Brail (18):
 - Start on 1.7.13.

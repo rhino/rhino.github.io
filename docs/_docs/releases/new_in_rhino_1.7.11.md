@@ -16,28 +16,19 @@ nav_order: -24
 {:toc}
 
 ---
-This release includes implementations of a number of missing JavaScript language features,
-including:
+This release includes implementations of a number of missing JavaScript language features, including:
+- Improvement to the accuracy and reliability of the parser and its associated AST.
+- The Map, Set, WeakMap, and WeakSet classes.
+- More Array functions, including from, of, fill, keys, values, entries, and copyWithin.
+- Many more Math methods.
+- More Object functions, including seal and freeze.
+- Many other bug fixes, as shown below.
 
-* Improvement to the accuracy and reliability of the parser and its associated AST.
-* The Map, Set, WeakMap, and WeakSet classes.
-* More Array functions, including from, of, fill, keys, values, entries, and copyWithin.
-* Many more Math methods.
-* More Object functions, including seal and freeze.
-* Many other bug fixes, as shown below.
+In general, Rhino's philosophy for new features and changes is to follow the ECMAScript spec, but to use the "language version" on the Context class when backward compatibility would be broken.
 
-In general, Rhino's philosophy for new features and changes is to
-follow the ECMAScript spec, but to use the "language version" on the Context class
-when backward compatibility would be broken.
+For example, the Array.prototype.concat function in older versions of Rhino would treat any input value as "spreadable" if it has the same constructor as Array. ECMAScript now says clearly that this should only happen if the "isConcatSpreadable" symbol is present. In this release, the old behavior is disable when the language level is at least the "ES6" level (Context.VERSION_ES6, or 200).
 
-For example, the Array.prototype.concat function in older versions of Rhino would treat
-any input value as "spreadable" if it has the same constructor as Array. ECMAScript now says
-clearly that this should only happen if the "isConcatSpreadable" symbol is present. In
-this release, the old behavior is disable when the language level is at least the
-"ES6" level (Context.VERSION_ES6, or 200).
-
-Developers working on new code will be happier if they set the language level to
-CONTEXT.VERSION_ES6, or use the "-version 200" flag to the command line tool.
+Developers working on new code will be happier if they set the language level to CONTEXT.VERSION_ES6, or use the "-version 200" flag to the command line tool.
 
 A future release will change the default language version of the command line tool.
 
@@ -154,7 +145,7 @@ RBRi (2):
 - first simple version of copyWithin
 - first array.of impl
 
-Raphaël Jakse (1):
+Raphaï¿½l Jakse (1):
 - Test function arity and length properties
 
 Ravi Kishore (1):
@@ -163,7 +154,7 @@ Ravi Kishore (1):
 Stijn Kliemesch (1):
 - Added testcase for #510
 
-Sébastien Doeraene (2):
+Sï¿½bastien Doeraene (2):
 - Fix #448: Correctly wrap the result of Math.imul as an Int32.
 - Fix the conversions in typedarrays.Conversions.
 
