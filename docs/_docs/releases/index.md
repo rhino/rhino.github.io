@@ -15,10 +15,11 @@ has_toc: false
 {:toc}
 
 ---
-Rhino is available for download both in source and compiled form.
+Release Notes and zip files containing both the source code and a binary) are available from Rhino 1.4R3 onwards, which is the first public release.
 
-## Binaries
+As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on Github. Through the [Releases section](https://github.com/mozilla/rhino/releases) on GitLab the assets can be downloaded separately.
 
+## Releases
 |  Release  |  Release Date  |  Change log  |  Download link  |
 |  ---  |  ---  |  ---  |  ---  |
 |  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [rhino1.7.13.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
@@ -51,6 +52,19 @@ Rhino is available for download both in source and compiled form.
 |  Rhino 1.5R1  |  2000-09-10  |  [Changes in 1.5R1](new_in_rhino_1.5r1.md)  |  [rhino15R1.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R1.zip)  |
 |  Rhino 1.4R3  |  1999-05-10  |  Initial public release  |  [rhino14R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino14R3.zip)  |
 
+
+## Maven
+Rhino is also available through [MVNnrepository](https://mvnrepository.com/)
+
+```xml
+<dependency>
+    <groupId>org.mozilla</groupId>
+    <artifactId>rhino</artifactId>
+    <version>1.7.13</version>
+</dependency>
+```
+
+---
 [^1]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
 
     If you would like to use E4X you need to add `xbean.jar` from XMLBeans distribution to your class path.
