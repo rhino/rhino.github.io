@@ -20,7 +20,7 @@ This release contains fixes that have been sitting in the master branch for some
 
 The next release will be 1.8.0, and it will include many existing pull requests.
 
-André Bargull (24):
+AndrÃ© Bargull (24):
 - Add missing license header to DefineClassMapInheritance.java
 - Remove invalid UTF-8 encoded unicode replacement characters (EF BF BD)
 - Add missing entries

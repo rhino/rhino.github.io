@@ -19,7 +19,7 @@ nav_order: -19
 Merged many of the outstanding pull requests in the GitHub repo.
 
 High-level changes include the following:
-- Many compatibility fixes for Date, Array, String, and others (Andr� Bargull)
+- Many compatibility fixes for Date, Array, String, and others (André Bargull)
 - Array.find() and findIndex() (Evgeny Shepelyuk)
 - String.trimLeft() and trimRight() (Travis Ennis)
 - AST and "toSource" fixes (tntim96)
