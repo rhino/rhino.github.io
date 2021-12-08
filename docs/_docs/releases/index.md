@@ -19,7 +19,7 @@ Release Notes and zip files containing both the source code and a binary) are av
 
 As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on Github. Through the [Releases section](https://github.com/mozilla/rhino/releases) on GitLab the assets can be downloaded separately.
 
-## Releases
+## Release Overview
 
 |  Release  |  Release Date  |  Change log  |  Download link  |
 |  ---  |  ---  |  ---  |  ---  |
