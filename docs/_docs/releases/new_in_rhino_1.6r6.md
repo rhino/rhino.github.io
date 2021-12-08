@@ -24,7 +24,7 @@ Rhino now supports the remaining JavaScript 1.5 features that hadn't been implem
 
 ### JavaScript 1.5: "strict" mode with new warning messages
 
-See [Tackling JavaScript strict warnings](https://www.javascriptkit.com/javatutors/serror.shtml) for a description of JavaScript strict mode.
+See [JavaScript Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) for a description of JavaScript strict mode.
 
 Briefly, Rhino reports warnings in strict mode for
 
@@ -69,7 +69,7 @@ Wrapped access to system properties and creation of class loaders into AccessCon
 
 Rhino now comes with test drivers written in Java. These drivers can be used to test Rhino if you are making any changes to the core engine. They are designed to use the tests shared with the C-based SpiderMonkey engine in mozilla/js/tests in CVS.
 
-See [Running the Rhino tests](running_the_rhino_tests.md) for details on how to execute the tests using JsDriver.
+See [Running the Rhino tests](https://github.com/mozilla/rhino/blob/master/testsrc/README.md) for details on how to execute the tests using JsDriver.
 
 ## Support for calling Java methods and constructors with variable argument lists
 

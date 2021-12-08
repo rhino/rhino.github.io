@@ -32,4 +32,4 @@ nav_order: -17
 - Fixes in JS to Java access
 - Include Mozilla test suite
 
-[A list of bugs](https://bugzilla.mozilla.org/buglist.cgi?list_id=3461404;chfieldto=Now;chfield=resolution;query_format=advanced;chfieldfrom=2011-05-09;chfieldvalue=FIXED;product=Rhino%20graveyard) that were fixed since the previous release.
+[A list of bugs](https://bugzilla.mozilla.org/buglist.cgi?chfield=resolution&chfieldfrom=2011-05-09&resolution=FIXED&product=Rhino%20Graveyard&classification=Graveyard&query_format=advanced&chfieldto=2012-06-18&chfieldvalue=FIXED) that were fixed since the previous release.

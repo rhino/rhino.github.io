@@ -28,7 +28,7 @@ This release supports generators based on the ES6-standard `function *` syntax.
 
 ## Other important changes
 
-This release also includes a number of quality and consistency fixes from five contributors. As always, check out the [compatibility table](http://mozilla.github.io/rhino/compat/engines.html) to see where Rhino stands today.
+This release also includes a number of quality and consistency fixes from five contributors. As always, check out the [compatibility table](https://mozilla.github.io/rhino/compat/engines.html) to see where Rhino stands today.
 
 Gregory Brail (18):
 - Start on 1.7.13.
@@ -84,9 +84,9 @@ RBRi (48):
 - switch value and done
 - make some method protected to support rhino-external implementations
 - NativeArrayBuffer slice() length is 2
-- fix String.indexOf and String.includes when searching for an empty st… [[#747](https://github.com/mozilla/rhino/issues/747)](https://github.com/mozilla/rhino/issues/747)
+- fix String.indexOf and String.includes when searching for an empty st… [#747](https://github.com/mozilla/rhino/issues/747)
 - fix string.split with limit 0
-- fix for issue [[#665](https://github.com/mozilla/rhino/issues/665)](https://github.com/mozilla/rhino/issues/665) (maybe we have to adjust the version switch to version 1_6)
+- fix for issue [#665](https://github.com/mozilla/rhino/issues/665) (maybe we have to adjust the version switch to version 1_6)
 - fix for the recursion detection when converting an array into a string
 - fix [#670](https://github.com/mozilla/rhino/issues/670)
 - add testcase for issue [#656](https://github.com/mozilla/rhino/issues/656)

@@ -20,10 +20,10 @@ nav_order: -15
 
 Rhino has supported Continuations for some time now, but there wasn't a great way to interact with continuations from Java. Continuations have been useful with in server-side scripting, since it allows for saving and restarting JavaScript execution, possibly with serializing the execution state when stopped. With Rhino 1.7R2, methods in `org.mozilla.javascript.Context` allow for control from Java:
 
-- [executeScriptWithContinuations](/rhino/javadocs/org/mozilla/javascript/context.html#executescriptwithcontinuations(org.mozilla.javascript.script,%20org.mozilla.javascript.scriptable)) - Execute script that may pause execution by capturing a continuation.
+- [executeScriptWithContinuations](/rhino/javadoc/org/mozilla/javascript/context.html#executescriptwithcontinuations(org.mozilla.javascript.script,%20org.mozilla.javascript.scriptable)) - Execute script that may pause execution by capturing a continuation.
 - [callFunctionWithContinuations](/rhino/javadoc/org/mozilla/javascript/Context.html#callFunctionWithContinuations-org.mozilla.javascript.Callable-org.mozilla.javascript.Scriptable-java.lang.Object:A-) - Call function that may pause execution by capturing a continuation.
-- [captureContinuation](/rhino/javadocs/org/mozilla/javascript/context.html#capturecontinuation()) - Capture a continuation from the current execution.
-- [resumeContinuation](/rhino/javadocs/org/mozilla/javascript/context.html#resumecontinuation(java.lang.object,%20org.mozilla.javascript.scriptable,%20java.lang.object)) - Restarts execution of the JavaScript suspended at the call to captureContinuation.
+- [captureContinuation](/rhino/javadoc/org/mozilla/javascript/context.html#capturecontinuation()) - Capture a continuation from the current execution.
+- [resumeContinuation](/rhino/javadoc/org/mozilla/javascript/context.html#resumecontinuation(java.lang.object,%20org.mozilla.javascript.scriptable,%20java.lang.object)) - Restarts execution of the JavaScript suspended at the call to captureContinuation.
 
 For example, if you had a Java class MyClass with a method f(). Say that you wanted to pause execution of a script when f() was called. You could call captureContinuation, which wraps up all the state of the current execution and returns it as a ContinuationPending object. ContinuationPending is also an exception; you indicate to Rhino that you want to suspend execution by throwing the exception:
 
@@ -65,11 +65,11 @@ try {
 ```
 Note also that as an added convenience ContinuationPending supports saving an application-defined object. The continuations API is only supported for interpreted mode.
 
-For more examples of using the API, see the unit test, [ContinuationsAPITest.java](https://github.com/mozilla/rhino/testsrc/org/mozilla/javascript/tests/ContinuationsApiTest.java).
+For more examples of using the API, see the unit test, [ContinuationsAPITest.java](https://github.com/mozilla/rhino/tree/master/testsrc/org/mozilla/javascript/tests/ContinuationsApiTest.java).
 
 ## Better line editing for Rhino shell
 
-Rhino 1.7R2 now has line editing in the Rhino shell. The heavy lifting comes from [JLine](https://jline.sourceforge.net/), a nice Java library for handling console input. We get command history (using the up and down arrow keys to bring up previous command lines) for free. And with some additional code in Rhino we have limited support for completion.
+Rhino 1.7R2 now has line editing in the Rhino shell. The heavy lifting comes from [JLine](https://github.com/jline/jline1), a nice Java library for handling console input. We get command history (using the up and down arrow keys to bring up previous command lines) for free. And with some additional code in Rhino we have limited support for completion.
 
 We don't ship with JLine with Rhino, so you'll have to download it yourself. Rhino automatically detects whether JLine is on the classpath and uses it if so and otherwise maintains the previous simple behavior. So to run your shell with JLine your command will look like
 
@@ -151,4 +151,4 @@ hello, undefined
 
 Now to test this function you might write a  [JUnit](https://www.junit.org/) test that executes a bunch of setup code and then calls `hello()` three times, saving the result value, and calling a comparison function with the actual and expected values. It's a decent amount of code to write.
 
-Doctest does this all for me. Rhino 1.7R2 contains both a new doctest shell function and a JUnit test [DoctestsTest](https://github.com/mozilla/rhino/testsrc/org/mozilla/javascript/tests/DoctestsTest.java) that finds files with a `.doctest` extension and runs them. So now all I need to do is copy the shell session above, paste it into `hello.doctest`, and put it in the right directory and I have a JUnit test! It's much more convenient to write tests, which greatly increases the chances that tests actually get written.
+Doctest does this all for me. Rhino 1.7R2 contains both a new doctest shell function and a JUnit test [DoctestsTest](https://github.com/mozilla/rhino/blob/master/testsrc/org/mozilla/javascript/tests/DoctestsTest.java) that finds files with a `.doctest` extension and runs them. So now all I need to do is copy the shell session above, paste it into `hello.doctest`, and put it in the right directory and I have a JUnit test! It's much more convenient to write tests, which greatly increases the chances that tests actually get written.

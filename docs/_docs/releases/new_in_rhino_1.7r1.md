@@ -54,7 +54,7 @@ As of Rhino 1.7R1, the E4X implementation based on DOM3 is now preferred over th
 
 ## Support for JDK 1.4 through separate JAR file
 
-We now require at least JDK 1.5 in order to compile Rhino sources. As a result, the `js.jar` in the binary distribution is not runnable with JDK 1.4. In order to support people running Rhino on JDK 1.4, we use [Retrotranslator](https://retrotranslator.sourceforge.net) to produce `js-14.jar`, which is compatible with JDK 1.4. `js-14.jar` is also in the binary distribution and can be built from source using ant.
+We now require at least JDK 1.5 in order to compile Rhino sources. As a result, the `js.jar` in the binary distribution is not runnable with JDK 1.4. In order to support people running Rhino on JDK 1.4, we use [Retrotranslator](http://retrotranslator.sourceforge.net/) to produce `js-14.jar`, which is compatible with JDK 1.4. `js-14.jar` is also in the binary distribution and can be built from source using ant.
 JDK 1.4 support will be dropped entirely from Rhino in a future release.
 
 ## Support for instruction threshold callbacks in compiled mode

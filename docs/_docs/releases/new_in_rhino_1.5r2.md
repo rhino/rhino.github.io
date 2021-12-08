@@ -19,7 +19,7 @@ nav_order: -2
 This is a log of significant changes since the release of Rhino 1.5 Release 1.
 
 ## Graphical debugger
-Thanks to a contribution by Christopher Oliver, Rhino now has a graphical debugger. See [Rhino Debugger](../_tools/debugger.md) for more details.
+Thanks to a contribution by Christopher Oliver, Rhino now has a graphical debugger. See [Rhino Debugger](../../_tools/debugger.md) for more details.
 
 ## Footprint reductions
 Igor Bukanov has provided a wealth of changes to reduce the number and size of objects required by Rhino. In particular, he introduced a new way to represent the built-in objects like Date and RegExp that reduces the amount of memory required and speeds up `Context.initStandardObjects`.

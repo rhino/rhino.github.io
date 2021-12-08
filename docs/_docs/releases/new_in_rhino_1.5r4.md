@@ -19,7 +19,7 @@ nav_order: -4
 This is a log of changes since the release of Rhino 1.5 Release 3.
 
 ## Rhino debug API changes
-A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](1.5r3-debug-api-changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
+A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](1.5r3_debug_api_changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
 
 ## WrapFactory introduced, WrapHandler deprecated
 A design flaw in the WrapHandler interface (a call to a Java contructor from JavaScript would result in a call to wrap the result, which would then be cast to a Scriptable) inspired the deprecation of that interface and the introduction of a new class, WrapFactory, that contains a new method called on the result of a constructor call and can be customized by application if necessary.
@@ -30,7 +30,7 @@ Igor Bukanov contributed a new security implementation that allows integration w
 
 Due to this changes SecuritySupport interface is replaced by ClassShutter and SecurityController, where ClassShutter controls which classes are visible to scripts via LiveConnect and SecurityController provides permission management. For compatibility SecuritySupport is still available as a deprecated interface but only its visibleToScripts method is used as an alias for ClassShutter.visibleToScripts. See API documentation for new classes for details.
 
-An implementation of SecurityController that uses java policy settings to restrict script permissions based on its URL is available with Rhino shell. See the [JavaPolicySecurity](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/tools/shell/JavaPolicySecurity.html) source for details. To activate it, set the `rhino.use_java_policy_security` system property to true when invoking Rhino shell together with installing a security manager.
+An implementation of SecurityController that uses java policy settings to restrict script permissions based on its URL is available with Rhino shell. See the [JavaPolicySecurity](/rhino/javadoc/org/mozilla/javascript/tools/shell/JavaPolicySecurity.html) source for details. To activate it, set the `rhino.use_java_policy_security` system property to true when invoking Rhino shell together with installing a security manager.
 
 ## Serialization changes
 Due to changes in Rhino implementation and bug fixes in serialization support runtime data serialized in Rhino 1.5 Release 3 can not be read back in the Release 4.
@@ -51,7 +51,7 @@ obj.someMethod();
 ```
 
 ## Shell function to run external processes.
-A new `runCommand` function is added to [Rhino Shell](../../_tools/shell.md) to run external priocesses. For details, see [runCommand](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/tools/shell/Global.html#runCommand-org.mozilla.javascript.Context-org.mozilla.javascript.Scriptable-java.lang.Object:A-org.mozilla.javascript.Function-)
+A new `runCommand` function is added to [Rhino Shell](../../_tools/shell.md) to run external priocesses. For details, see [runCommand](/rhino/javadoc/org/mozilla/javascript/tools/shell/Global.html#runCommand-org.mozilla.javascript.Context-org.mozilla.javascript.Scriptable-java.lang.Object:A-org.mozilla.javascript.Function-)
 
 ## Resolved Bugzilla reports
 The following Rhino reports in Bugzilla where resolved for Rhino 1.5 Release 4.
