@@ -226,8 +226,10 @@ public Counter () { }
 The method `jsConstructor` defines the JavaScript constructor that was called with the expression `new Counter(7)` in the JavaScript code above.
 
 ```java
-public void jsConstructor(int a) { count
-= a; }
+@JSConstructor
+public void Counter(int a) {
+    count = a;
+}
 ```
 
 ### Class name
@@ -235,16 +237,19 @@ public void jsConstructor(int a) { count
 The class name is defined by the `getClassName` method. This is used to determine the name of the constructor.
 
 ```java
-public String getClassName() { return "Counter";
+public String getClassName() {
+    return "Counter";
 }
 ```
 
 ### Dynamic properties
 
-Dynamic properties are defined by methods beginning with `jsGet_` or `jsSet_`. The method `jsGet_count` defines the_count_ property.
+Dynamic properties are defined by methods annotated with [@JSGetter]() or [@JSSetter](). The method `getCount` defines the `count` property.
 
 ```java
-public int jsGet_count() { return count++;
+@JSGetter
+public int getCount() {
+    return count++;
 }
 ```
 
@@ -252,11 +257,13 @@ The expression `c.count` in the JavaScript code above results in a call to this 
 
 ### Defining JavaScript "methods"
 
-Methods can be defined using the `jsFunction_ prefix`. Here we define `resetCount` for JavaScript.
+Methods can be defined using the [@JSFunction]() annotation. Here we define the `resetCount` method for JavaScript.
 
 ```java
-public void jsFunction_resetCount() { count
-= 0; }
+@JSFunction
+public void resetCount() {
+    count = 0;
+}
 ```
 
 The call `c.resetCount()` above calls this method.

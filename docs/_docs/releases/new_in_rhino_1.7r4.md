@@ -1,7 +1,9 @@
 ---
-title: "New in Rhino 1.7R4"
+title: New in Rhino 1.7R4
 parent: Releases
+nav_order: -17
 ---
+
 # {{ page.title }}
 {: .no_toc }
 
@@ -30,4 +32,4 @@ parent: Releases
 - Fixes in JS to Java access
 - Include Mozilla test suite
 
-[A list of bugs](https://bugzilla.mozilla.org/buglist.cgi?list_id=3461404;chfieldto=Now;chfield=resolution;query_format=advanced;chfieldfrom=2011-05-09;chfieldvalue=FIXED;product=Rhino) that were fixed since the previous release.
+[A list of bugs](https://bugzilla.mozilla.org/buglist.cgi?list_id=3461404;chfieldto=Now;chfield=resolution;query_format=advanced;chfieldfrom=2011-05-09;chfieldvalue=FIXED;product=Rhino%20graveyard) that were fixed since the previous release.

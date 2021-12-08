@@ -1,7 +1,9 @@
 ---
-title: "New in Rhino 1.6R7"
+title: New in Rhino 1.6R7
 parent: Releases
+nav_order: -13
 ---
+
 # {{ page.title }}
 {: .no_toc }
 
