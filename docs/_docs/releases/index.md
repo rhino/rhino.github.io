@@ -56,11 +56,11 @@ Note: these are the currently available artifacts in the latest releases of Rhin
 |  Rhino 1.6R1[^2]  |  2004-11-29  |  [Changes in 1.6R1](new_in_rhino_1.6r1.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R1.zip)  |
 |  Rhino 1.5R5[^2]  |  2004-03-25  |  [Changes in 1.5R5](new_in_rhino_1.5r5.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_5R5.zip)  |
 |  Rhino 1.5R4.1  |  2003-04-21  |  [Changes in 1.5R4.1](new_in_rhino_1.5r4.1.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino15R41.zip)  |
-|  Rhino 1.5R4  |  2003-02-10  |  [Changes in 1.5R4](new_in_rhino_1.5r4.md)  |  [rhino15R4.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino15R4.zip)  |
-|  Rhino 1.5R3  |  2002-01-27  |  [Changes in 1.5R3](new_in_rhino_1.5r3.md)  |  [rhino15R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino15R3.zip)  |
-|  Rhino 1.5R2  |  2001-07-27  |  [Changes in 1.5R2](new_in_rhino_1.5r2.md)  |  [rhino15R2.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R2.zip)  |
-|  Rhino 1.5R1  |  2000-09-10  |  [Changes in 1.5R1](new_in_rhino_1.5r1.md)  |  [rhino15R1.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R1.zip)  |
-|  Rhino 1.4R3  |  1999-05-10  |  Initial public release  |  [rhino14R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino14R3.zip)  |
+|  Rhino 1.5R4  |  2003-02-10  |  [Changes in 1.5R4](new_in_rhino_1.5r4.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino15R4.zip)  |
+|  Rhino 1.5R3  |  2002-01-27  |  [Changes in 1.5R3](new_in_rhino_1.5r3.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino15R3.zip)  |
+|  Rhino 1.5R2  |  2001-07-27  |  [Changes in 1.5R2](new_in_rhino_1.5r2.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R2.zip)  |
+|  Rhino 1.5R1  |  2000-09-10  |  [Changes in 1.5R1](new_in_rhino_1.5r1.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R1.zip)  |
+|  Rhino 1.4R3  |  1999-05-10  |  Initial public release  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino14R3.zip)  |
 
 
 ## Maven
