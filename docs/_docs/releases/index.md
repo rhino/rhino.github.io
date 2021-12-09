@@ -22,27 +22,27 @@ As of Rhino 1.7R5 development and releases are done through the [Rhino repositor
 ## Available artifacts
 
 |  Artifact  |  Description  |  Usage  |  Notes  |
-|  `rhino-X.X.X.jar`  |  Full jar, including tools[^1], excluding the JSR-223 Script engine wrapper  |  Use when any of the tools[^1] are required. Otherwise use `rhino-runtime-X.X.X.jar` artifact  |    |
+|  `rhino-X.X.X.jar`  |  Full jar, including tools[^1], excluding the JSR-223 Script Engine wrapper  |  Use when any of the tools[^1] are required. Otherwise use `rhino-runtime-X.X.X.jar` artifact  |    |
 |  `rhino-engine-X.X.X.jar`  |  JSR-223 Script Engine wrapper  |  To be combined with either the `rhino-X.X.X.jar` or `rhino-runtime-X.X.X.jar` artifact when using Rhino through the Java Script Engine interface  |  [Available since Rhino 1.7.13](new_in_rhino_1.7.13.md/#script-engine-support)  |
-|  `rhino-runtime-X.X.X.jar`  |  Stripped-down jar, excludes tools[^1]  |  Use for embedding scenario's that don't require any of the tools[^1]  |  [Available since Rhino 1.7.12](new_in_rhino_1.7.12.md#new-jar-for-embedding-use-cases)  |
+|  `rhino-runtime-X.X.X.jar`  |  Stripped-down jar, excludes tools[^1] & JSR-223 Script Engine wrapper  |  Use for embedding scenario's that don't require any of the tools[^1]  |  [Available since Rhino 1.7.12](new_in_rhino_1.7.12.md#new-jar-for-embedding-use-cases)  |
 
 Note: these are the currently available artifacts in the latest releases of Rhino. Historically other artifacts have been available.
 
 ## Release Overview
 
-|  Release  |  Release Date  |  Change log  |  Download link  |
+|  Release  |  Release Date  |  Release Notes  |  Links  |
 |  ---  |  ---  |  ---  |  ---  |
-|  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [rhino1.7.13.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
-|  Rhino 1.7.12  |  2020-01-13  |  [Release Notes](new_in_rhino_1.7.12.md)  |  [rhino1.7.12.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip)  |
-|  Rhino 1.7.11  |  2019-05-30  |  [Release Notes](new_in_rhino_1.7.11.md)  |  [rhino1.7.11.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_11_Release/rhino-1.7.11.zip)  |
-|  Rhino 1.7.10  |  2018-04-09  |  [Release Notes](new_in_rhino_1.7.10.md)  |  [rhino1.7.10.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_10_Release/rhino-1.7.10.zip)  |
-|  Rhino 1.7.9  |  2018-03-15  |  [Release Notes](new_in_rhino_1.7.9.md)  |  [rhino1.7.9.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_9_Release/rhino-1.7.9.zip)  |
-|  Rhino 1.7.8  |  2018-01-22  |  [Release Notes](new_in_rhino_1.7.8.md)  |  [rhino1.7.8.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_8_Release/rhino-1.7.8.zip)  |
-|  Rhino 1.7.7.2  |  2017-08-24  |  [Release Notes](new_in_rhino_1.7.7.2.md)  |  [rhino1.7.7.2.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/rhino-1.7.7.2.zip)  |
-|  Rhino 1.7.7.1  |  2016-02-01  |  [Release Notes](new_in_rhino_1.7.7.1.md)  |  [rhino1.7.7.1.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_1_RELEASE/rhino-1.7.7.1.zip)  |
-|  Rhino 1.7.7  |  2015-06-17  |  [Release Notes](new_in_rhino_1.7.7.md)  |  [rhino1.7.7.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_RELEASE/rhino1.7.7.zip)  |
-|  Rhino 1.7.6  |  2015-04-15  |  [Release Notes](new_in_rhino_1.7.6.md)  |  [rhino1.7.6.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_6_RELEASE/rhino1.7.6.zip)  |
-|  Rhino 1.7R5  |  2015-01-29  |  [Release Notes](new_in_rhino_1.7r5.md)  |  [rhino1_7R5.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7R5_RELEASE/rhino1_7R5.zip)  |
+|  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_13_Release), [rhino1.7.13.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
+|  Rhino 1.7.12  |  2020-01-13  |  [Release Notes](new_in_rhino_1.7.12.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_12_Release), [rhino1.7.12.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip)  |
+|  Rhino 1.7.11  |  2019-05-30  |  [Release Notes](new_in_rhino_1.7.11.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_11_Release), [rhino1.7.11.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_11_Release/rhino-1.7.11.zip)  |
+|  Rhino 1.7.10  |  2018-04-09  |  [Release Notes](new_in_rhino_1.7.10.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_10_Release), [rhino1.7.10.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_10_Release/rhino-1.7.10.zip)  |
+|  Rhino 1.7.9  |  2018-03-15  |  [Release Notes](new_in_rhino_1.7.9.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_9_Release), [rhino1.7.9.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_9_Release/rhino-1.7.9.zip)  |
+|  Rhino 1.7.8  |  2018-01-22  |  [Release Notes](new_in_rhino_1.7.8.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_8_Release), [rhino1.7.8.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_8_Release/rhino-1.7.8.zip)  |
+|  Rhino 1.7.7.2  |  2017-08-24  |  [Release Notes](new_in_rhino_1.7.7.2.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_7_2_Release), [rhino1.7.7.2.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/rhino-1.7.7.2.zip)  |
+|  Rhino 1.7.7.1  |  2016-02-01  |  [Release Notes](new_in_rhino_1.7.7.1.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_7_1_Release), [rhino1.7.7.1.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_1_RELEASE/rhino-1.7.7.1.zip)  |
+|  Rhino 1.7.7  |  2015-06-17  |  [Release Notes](new_in_rhino_1.7.7.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_7_Release), [rhino1.7.7.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_RELEASE/rhino1.7.7.zip)  |
+|  Rhino 1.7.6  |  2015-04-15  |  [Release Notes](new_in_rhino_1.7.6.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_6_Release), [rhino1.7.6.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_6_RELEASE/rhino1.7.6.zip)  |
+|  Rhino 1.7R5  |  2015-01-29  |  [Release Notes](new_in_rhino_1.7r5.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7R5_Release), [rhino1_7R5.zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7R5_RELEASE/rhino1_7R5.zip)  |
 |  Rhino 1.7R4  |  2012-06-18  |  [New in Rhino 1.7R4](new_in_rhino_1.7r4.md)  |  [rhino1_7R4.zip](https://github.com/downloads/mozilla/rhino/rhino1_7R4.zip)  |
 |  Rhino 1.7R3  |  2011-05-09  |  [New in Rhino 1.7R3](new_in_rhino_1.7r3.md)  |  [rhino1_7R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R3.zip)  |
 |  Rhino 1.7R2  |  2009-03-22  |  [New in Rhino 1.7R2](new_in_rhino_1.7r2.md)  |  [rhino1_7R2.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R2.zip)  |
