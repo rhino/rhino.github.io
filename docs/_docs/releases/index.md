@@ -22,9 +22,9 @@ As of Rhino 1.7R5 development and releases are done through the [Rhino repositor
 ## Available artifacts
 
 |  Artifact  |  Description  |  Usage  |  Notes  |
+|  `rhino-runtime-X.X.X.jar`  |  Stripped-down jar, excludes tools[^1] & JSR-223 Script Engine wrapper  |  Use for embedding scenario's that don't require any of the tools[^1]  |  [Since Rhino 1.7.12](new_in_rhino_1.7.12.md#new-jar-for-embedding-use-cases)  |
 |  `rhino-X.X.X.jar`  |  Full jar, including tools[^1], excluding the JSR-223 Script Engine wrapper  |  Use when any of the tools[^1] are required. Otherwise use `rhino-runtime-X.X.X.jar` artifact  |    |
 |  `rhino-engine-X.X.X.jar`  |  JSR-223 Script Engine wrapper  |  To be combined with either the `rhino-X.X.X.jar` or `rhino-runtime-X.X.X.jar` artifact when using Rhino through the Java Script Engine interface  |  [Since Rhino 1.7.13](new_in_rhino_1.7.13.md/#script-engine-support)  |
-|  `rhino-runtime-X.X.X.jar`  |  Stripped-down jar, excludes tools[^1] & JSR-223 Script Engine wrapper  |  Use for embedding scenario's that don't require any of the tools[^1]  |  [Since Rhino 1.7.12](new_in_rhino_1.7.12.md#new-jar-for-embedding-use-cases)  |
 
 Note: these are the currently available artifacts in the latest releases of Rhino. Historically other artifacts have been available.
 
