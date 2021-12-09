@@ -49,7 +49,7 @@ Note: these are the currently available artifacts in the latest releases of Rhin
 |  Rhino 1.7R1  |  2008-03-06  |  [New in Rhino 1.7R1](new_in_rhino_1.7r1.md)  |  [rhino1_7R1.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R1.zip)  |
 |  Rhino 1.6R7  |  2007-08-20  |  [New in Rhino 1.6R7](new_in_rhino_1.6r7.md)  |  [rhino1_6R7.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R7.zip)  |
 |  Rhino 1.6R6[^2]  |  2007-07-30  |  [New in Rhino 1.6R6](new_in_rhino_1.6r6.md)  |  [rhino1_6R6.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R6.zip)  |
-|  Rhino 1.6R5[^2]  |  2006-11-19  |  Same code as 1.6R4, but relicensed under MPL/GPL.  |  [rhino1_6R5.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R5.zip)  |
+|  Rhino 1.6R5[^2]  |  2006-11-19  |  1.6R4 relicensed under MPL/GPL  |  [rhino1_6R5.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R5.zip)  |
 |  Rhino 1.6R4[^2]  |  2006-09-10  |  [bug 343976](https://bugzilla.mozilla.org/show_bug.cgi?id=343976)  |  [rhino1_6R4.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R4.zip)  |
 |  Rhino 1.6R3[^2]  |  2006-07-24  |  [Changes in 1.6R3](new_in_rhino_1.6r3.md)  |  [rhino1_6R3.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R3.zip)  |
 |  Rhino 1.6R2[^2]  |  2005-09-19  |  [Changes in 1.6R2](new_in_rhino_1.6r2.md)  |  [rhino1_6R2.zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_6R2.zip)  |

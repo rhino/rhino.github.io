@@ -15,7 +15,7 @@ nav_order: 5
 
 ---
 
-Rhino is open source and as of release 1.7R4 Rhino available under [MPL 2.0](https://github.com/mozilla/rhino/blob/master/LICENSE.txt) 2.0.
+Rhino is open source and as of release 1.7R4 Rhino available under [MPL 2.0](https://github.com/mozilla/rhino/blob/master/LICENSE.txt).
 
 Previous versions were released under [MPL 1.1/GPL 2.0](https://www.mozilla.org/MPL/) license.
 
