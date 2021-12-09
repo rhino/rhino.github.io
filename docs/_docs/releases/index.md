@@ -85,6 +85,7 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
 
     {: .note }
     Some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
+    
 
 [^2]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
 
@@ -95,3 +96,4 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
     Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
 
     If neither XMLBeans nor DOM3 are present, E4X is not available.
+    
