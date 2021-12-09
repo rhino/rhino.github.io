@@ -56,3 +56,14 @@ encoding: utf-8
 relative_links:
   enabled: true
   collections: true
+
+callouts:
+  highlight:
+    color: green
+    opacity: 0.5
+  important:
+    title: Important
+    color: orange
+  note:
+    title: Note
+    color: blue

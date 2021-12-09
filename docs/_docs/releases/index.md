@@ -84,7 +84,7 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
     - [JavaScript Compiler](../../_tools/javascript_compiler.md): Command-line Utility to compile JavaScript to Java Class files
 
     {: .note }
-    A paragraph that some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
+    Some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
 
 [^2]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
 
