@@ -58,12 +58,9 @@ relative_links:
   collections: true
 
 callouts:
-  highlight:
-    color: green
+  warning:
+    color: red
     opacity: 0.5
-  important:
-    title: Important
-    color: orange
   note:
     title: Note
     color: blue
