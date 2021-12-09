@@ -64,7 +64,7 @@ Note: these are the currently available artifacts in the latest releases of Rhin
 
 
 ## Maven
-Rhino is also available through [MVNnrepository](https://mvnrepository.com/)
+Rhino is also available through [MVNrepository](https://mvnrepository.com/artifact/org.mozilla/rhino)
 
 ```xml
 <dependency>
