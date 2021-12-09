@@ -1,5 +1,5 @@
 ---
-title: New in Rhino 1.7.7
+title: Rhino 1.7.7
 parent: Releases
 nav_order: -20
 ---

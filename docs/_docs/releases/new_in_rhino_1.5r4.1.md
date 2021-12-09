@@ -1,5 +1,5 @@
 ---
-title: New in Rhino 1.5R4.1
+title: Rhino 1.5R4.1
 parent: Releases
 nav_order: -5
 ---
