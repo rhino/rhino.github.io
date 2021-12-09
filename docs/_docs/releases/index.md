@@ -32,11 +32,17 @@ These artifacts can be downloaded separatly through the [Releases](https://githu
 > These are the currently available artifacts in the latest releases of Rhino.
 > Historically other artifacts have been available.
 
+## Maven
+The Rhino artifacts are also available through [MVNrepository](https://mvnrepository.com) under groupId [org.mozilla](https://mvnrepository.com/artifact/org.mozilla)
+|  `rhino-runtime-X.X.X.jar`  |  [rhino-runtime](https://mvnrepository.com/artifact/org.mozilla/rhino-runtime)  |
+|  `rhino-X.X.X.jar`  |  [rhino](https://mvnrepository.com/artifact/org.mozilla/rhino)  |
+|  `rhino-engine-X.X.X.jar`  |  [rhino-engine](https://mvnrepository.com/artifact/org.mozilla/rhino-engine)  |
+
 ## Release Overview
 
 |  Release  |  Release Date  |  Release Notes  |  Links  |
 |  ---  |  ---  |  ---  |  ---  |
-|  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_13_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
+|  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_13_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip), [mvn]()  |
 |  Rhino 1.7.12  |  2020-01-13  |  [Release Notes](new_in_rhino_1.7.12.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_12_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip)  |
 |  Rhino 1.7.11  |  2019-05-30  |  [Release Notes](new_in_rhino_1.7.11.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_11_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_11_Release/rhino-1.7.11.zip)  |
 |  Rhino 1.7.10  |  2018-04-09  |  [Release Notes](new_in_rhino_1.7.10.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_10_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_10_Release/rhino-1.7.10.zip)  |
@@ -65,18 +71,6 @@ These artifacts can be downloaded separatly through the [Releases](https://githu
 |  Rhino 1.5R2  |  2001-07-27  |  [Changes in 1.5R2](new_in_rhino_1.5r2.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R2.zip)  |
 |  Rhino 1.5R1  |  2000-09-10  |  [Changes in 1.5R1](new_in_rhino_1.5r1.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino15R1.zip)  |
 |  Rhino 1.4R3  |  1999-05-10  |  Initial public release  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/older-packages/rhino14R3.zip)  |
-
-
-## Maven
-Rhino is also available through [MVNrepository](https://mvnrepository.com/artifact/org.mozilla/rhino)
-
-```xml
-<dependency>
-    <groupId>org.mozilla</groupId>
-    <artifactId>rhino</artifactId>
-    <version>1.7.13</version>
-</dependency>
-```
 
 ---
 [^1]: Rhino Tools consist of:
