@@ -34,6 +34,8 @@ These artifacts can be downloaded separatly through the [Releases](https://githu
 
 ## Maven
 The Rhino artifacts are also available through [MVNrepository](https://mvnrepository.com) under groupId [org.mozilla](https://mvnrepository.com/artifact/org.mozilla)
+|  Artifact  |  artifactId  | 
+|  ---  |  ---  |
 |  `rhino-runtime-X.X.X.jar`  |  [rhino-runtime](https://mvnrepository.com/artifact/org.mozilla/rhino-runtime)  |
 |  `rhino-X.X.X.jar`  |  [rhino](https://mvnrepository.com/artifact/org.mozilla/rhino)  |
 |  `rhino-engine-X.X.X.jar`  |  [rhino-engine](https://mvnrepository.com/artifact/org.mozilla/rhino-engine)  |
