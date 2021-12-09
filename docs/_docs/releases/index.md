@@ -17,16 +17,19 @@ has_toc: false
 ---
 Release Notes and zip files containing both the source code and a binary) are available from Rhino 1.4R3 onwards, which is the first public release.
 
-As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on Github and through the [Releases section](https://github.com/mozilla/rhino/releases) on GitLab the assets can be downloaded separately:
+As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on Github.
 
 ## Available artifacts
+These artifacts can be downloaded separatly through the [Releases](https://github.com/mozilla/rhino/releases) section on GitLab. Also see the `Release` link in the [Release Overview](#release-overview) for each release.
 
 |  Artifact  |  Description  |  Usage  |  Notes  |
+|  ---  |  ---  |  ---  |  ---  |
 |  `rhino-runtime-X.X.X.jar`  |  Stripped-down jar, excludes tools[^1] & JSR-223 Script Engine wrapper  |  Use for embedding scenario's that don't require any of the tools[^1]  |  [Since Rhino 1.7.12](new_in_rhino_1.7.12.md#new-jar-for-embedding-use-cases)  |
 |  `rhino-X.X.X.jar`  |  Full jar, including tools[^1], excluding the JSR-223 Script Engine wrapper  |  Use when any of the tools[^1] are required. Otherwise use `rhino-runtime-X.X.X.jar` artifact  |    |
 |  `rhino-engine-X.X.X.jar`  |  JSR-223 Script Engine wrapper  |  To be combined with either the `rhino-X.X.X.jar` or `rhino-runtime-X.X.X.jar` artifact when using Rhino through the Java Script Engine interface  |  [Since Rhino 1.7.13](new_in_rhino_1.7.13.md/#script-engine-support)  |
 
-Note: these are the currently available artifacts in the latest releases of Rhino. Historically other artifacts have been available.
+{: .note }
+These are the currently available artifacts in the latest releases of Rhino. Historically other artifacts have been available.
 
 ## Release Overview
 
@@ -80,7 +83,8 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
     - [Shell](../../_tools/shell.md): Interactive JavaScript [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
     - [JavaScript Compiler](../../_tools/javascript_compiler.md): Command-line Utility to compile JavaScript to Java Class files
 
-    Note that some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
+    {: .note }
+    A paragraph that some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
 
 [^2]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
 
