@@ -29,7 +29,8 @@ These artifacts can be downloaded separatly through the [Releases](https://githu
 |  `rhino-engine-X.X.X.jar`  |  JSR-223 Script Engine wrapper  |  To be combined with either the `rhino-X.X.X.jar` or `rhino-runtime-X.X.X.jar` artifact when using Rhino through the Java Script Engine interface  |  [Since Rhino 1.7.13](new_in_rhino_1.7.13.md/#script-engine-support)  |
 
 {: .note }
-These are the currently available artifacts in the latest releases of Rhino. Historically other artifacts have been available.
+> These are the currently available artifacts in the latest releases of Rhino.
+> Historically other artifacts have been available.
 
 ## Release Overview
 
@@ -84,7 +85,7 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
     - [JavaScript Compiler](../../_tools/javascript_compiler.md): Command-line Utility to compile JavaScript to Java Class files
 
     {: .note }
-    Some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
+    > Some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
     
 
 [^2]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
@@ -96,4 +97,3 @@ Rhino is also available through [MVNrepository](https://mvnrepository.com/artifa
     Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
 
     If neither XMLBeans nor DOM3 are present, E4X is not available.
-    
