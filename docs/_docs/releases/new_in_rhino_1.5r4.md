@@ -19,7 +19,7 @@ nav_order: -4
 This is a log of changes since the release of Rhino 1.5 Release 3.
 
 ## Rhino debug API changes
-A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](1.5r3_debug_api_changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
+A new, incompatible Rhino debug API gives an option to monitor entering/leaving of script functions while decreasing the amount of code to implement the API in the Rhino core. Details are available [here](1.5r4_debug_api_changes.md). With the new API [Rhino Debugger](../../_tools/debugger.md) provides options to break on function enter/exit, can debug scripts defined by eval and Function construction and scripts loaded prior the debugger were started.
 
 ## WrapFactory introduced, WrapHandler deprecated
 A design flaw in the WrapHandler interface (a call to a Java contructor from JavaScript would result in a call to wrap the result, which would then be cast to a Scriptable) inspired the deprecation of that interface and the introduction of a new class, WrapFactory, that contains a new method called on the result of a constructor call and can be customized by application if necessary.
