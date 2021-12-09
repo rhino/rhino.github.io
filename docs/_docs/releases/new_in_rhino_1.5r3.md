@@ -1,7 +1,6 @@
 ---
 title: New in Rhino 1.5R3
 parent: Releases
-has_children: true
 nav_order: -3
 ---
 
