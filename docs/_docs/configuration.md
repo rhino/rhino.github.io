@@ -1,7 +1,6 @@
 ---
-title: "Optimization Levels"
+title: Configuration
 ---
-
 # {{ page.title }}
 {: .no_toc }
 
@@ -14,6 +13,16 @@ title: "Optimization Levels"
 {:toc}
 
 ---
+See todos.txt
+
+Topics to discuss:
+- WrapFactory & setPrimitiveWrap
+- Feature flags
+- Security stuff
+- observeInstructioncount https://bugzilla.mozilla.org/show_bug.cgi?id=397680
+
+## Language Versions
+TODO
 
 ## Optimization levels
 

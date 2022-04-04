@@ -273,7 +273,12 @@ new JavaAdapter(javaIntfOrClass, [javaIntf, ..., javaIntf,] javascriptObject)
 
 Here `javaIntfOrClass` is an interface to implement or a class to extend and `javaIntf` are aditional interfaces to implement. The `javascriptObject` is the JavaScript object containing the methods that will be called from the Java adapter.
 
+ See the `enum.js` example for more information TODO link enum.js
+
 In practice there's little need to call the `JavaAdapter` constructor directly. Most of the time the previous syntaxes using the `new` operator will be sufficient.
+
+{: .note }
+> To use the JavaAdapter feature or an optimization level of 0 or greater, Rhino must be running under a security manager that allows the definition of class loaders.
 
 ## JavaScript Functions as Java Interfaces
 
@@ -416,3 +421,29 @@ function classForName(name) {
 classForName("NonExistingClass");
 classForName(null);
 ```
+
+## Limitations
+
+### LiveConnect
+
+If a JavaObject's field's name collides with that of a method, the value of that field is retrieved lazily, and can be counter-intuitively affected by later assignments:
+
+```js
+javaObj.fieldAndMethod = 5;
+var field = javaObj.fieldAndMethod;
+javaObj.fieldAndMethod = 7;
+// now, field == 7
+```
+
+You can work around this by forcing the field value to be converted to a JavaScript type when you take its value:
+
+```js
+javaObj.fieldAndMethod = 5;
+var field = javaObj.fieldAndMethod + 0; // force conversion now
+javaObj.fieldAndMethod = 7;
+// now, field == 5
+```
+
+### JSObject
+
+Rhino does **NOT** support the `netscape.javascript.JSObject` class.
