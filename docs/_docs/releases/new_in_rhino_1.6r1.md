@@ -20,7 +20,7 @@ Release Date: 2004-11-29
 
 Rhino 1.6R1 is the new major release of Rhino. It supports ECMAScript for XML (E4X) as specified by [ECMA 357 standard](https://www.ecma-international.org/wp-content/uploads/ECMA-357_2nd_edition_december_2005.pdf). E4X is a set of language extensions adding native XML support for JavaScript without affecting the existing code base. [E4X example](https://github.com/mozilla/rhino/blob/master/examples/E4X/e4x_example.js) demonstrates various E4X constructions and their usage in JavaScript code.
 
-This version of Rhino should be binary compatible with the current embeddings that use only public [API](/rhino/javadocindex.html) unless the code use the previously deprected classes as documented [below](#removal-of-deprecated-classes). Please report any incompatibility issues to Bugzilla.
+This version of Rhino should be binary compatible with the current embeddings that use only public [API](https://javadoc.io/doc/org.mozilla/rhino/latestindex.html) unless the code use the previously deprected classes as documented [below](#removal-of-deprecated-classes). Please report any incompatibility issues to Bugzilla.
 
 ## E4X implementation
 The E4X code was donated to the Rhino project by [BEA](http://www.bea.com/) and developed by staff from [BEA](http://www.bea.com/) and [AgileDelta](http://www.agiledelta.com/).
@@ -46,7 +46,7 @@ The interpreter mode in Rhino implements tail call elimination to avoid excessiv
 See [Bugzilla 257128](https://bugzilla.mozilla.org/show_bug.cgi?id=257128)
 
 ### Support for continuations in the interpreter
-The interpreter mode in Rhino supports continuations. The code is based on the ideas from the original implementation of continuations by Christopher Oliver and [SISC](http://sisc.sourceforge.net/) project. To use the continuations make sure that the interpreter mode is selected through [setting](/rhino/javadoc/org/mozilla/javascript/Context.html#setOptimizationLevel-int-) the optimization level to -1 or by adding `-opt -1` to the command line of [Rhino shell](../../_tools/shell.md).
+The interpreter mode in Rhino supports continuations. The code is based on the ideas from the original implementation of continuations by Christopher Oliver and [SISC](http://sisc.sourceforge.net/) project. To use the continuations make sure that the interpreter mode is selected through [setting](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#setOptimizationLevel-int-) the optimization level to -1 or by adding `-opt -1` to the command line of [Rhino shell](../../_tools/shell.md).
 
 Please note that the details of implementation and Java and JavaScript API for continuations may change in future in incompatible way.
 
@@ -71,12 +71,12 @@ with (SwingGui) {
 ...
 }
 ```
-Previously such functionality was available only to embeddings that used [org.mozilla.javascript.ImporterTopLevel](/rhino/javadoc/org/mozilla/javascript/ImporterTopLevel.html) class as the top level scope. The class provides additional `importPackage()` and `importClass()` global functions for scripts but their extensive usage has tendency to pollute the global name space with names of Java classes and prevents loaded classes from garbage collection.
+Previously such functionality was available only to embeddings that used [org.mozilla.javascript.ImporterTopLevel](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/ImporterTopLevel.html) class as the top level scope. The class provides additional `importPackage()` and `importClass()` global functions for scripts but their extensive usage has tendency to pollute the global name space with names of Java classes and prevents loaded classes from garbage collection.
 
 See [Bugzilla 245882](https://bugzilla.mozilla.org/show_bug.cgi?id=245882) for details.
 
 ### Context customization API
-[org.mozilla.javascript.ContextFactory](/rhino/javadoc/org/mozilla/javascript/ContextFactory.html) provides new API for customization of [org.mozilla.javascript.Context](/rhino/javadoc/org/mozilla/javascript/Context.html) and ensures that application-specific Context subclasses will always be used when Rhino runtime needs to create Context instances.
+[org.mozilla.javascript.ContextFactory](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/ContextFactory.html) provides new API for customization of [org.mozilla.javascript.Context](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html) and ensures that application-specific Context subclasses will always be used when Rhino runtime needs to create Context instances.
 See [Bugzilla 245882](https://bugzilla.mozilla.org/show_bug.cgi?id=245882) for details.
 
 ### Support for Date.now()
@@ -87,4 +87,4 @@ The following classes that were deprecated in Rhino 1.5R5 are no longer availabl
 - org.mozilla.javascript.ClassNameHelper
 - org.mozilla.javascript.ClassRepository
 
-See documentation for [org.mozilla.javascript.optimizer.ClassCompiler](/rhino/javadoc/org/mozilla/javascript/optimizer/ClassCompiler.html) that provides replacement for ClassNameHelper and ClassRepository.
+See documentation for [org.mozilla.javascript.optimizer.ClassCompiler](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/optimizer/ClassCompiler.html) that provides replacement for ClassNameHelper and ClassRepository.

@@ -16,7 +16,7 @@ nav_order: -5
 {:toc}
 
 ---
-1.5R4.1 is a bug fix release to address mostly regressions from 1.5R3 found in 1.5R4. The only visible API change compared with 1.5R4 is two new methods in [org.mozilla.javascript.Context](/rhino/javadoc/org/mozilla/javascript/Context.html), [getApplicationClassLoader()](/rhino/javadoc/org/mozilla/javascript/Context.html#getApplicationClassLoader-) and [setApplicationClassLoader(ClasssLoader)](/rhino/javadoc/org/mozilla/javascript/Context.html#setApplicationClassLoader-java.lang.ClassLoader-). They allow to control the class loader Rhino uses when accessing application classes.
+1.5R4.1 is a bug fix release to address mostly regressions from 1.5R3 found in 1.5R4. The only visible API change compared with 1.5R4 is two new methods in [org.mozilla.javascript.Context](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html), [getApplicationClassLoader()](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#getApplicationClassLoader-) and [setApplicationClassLoader(ClasssLoader)](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#setApplicationClassLoader-java.lang.ClassLoader-). They allow to control the class loader Rhino uses when accessing application classes.
 For differences between 1.5R4 and 1.5R3, see [1.5R4 change log](new_in_rhino_1.5r4.md).
 
 ## Resolved Bugzilla reports

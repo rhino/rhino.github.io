@@ -31,7 +31,7 @@ Igor Bukanov contributed a new security implementation that allows integration w
 
 Due to this changes SecuritySupport interface is replaced by ClassShutter and SecurityController, where ClassShutter controls which classes are visible to scripts via LiveConnect and SecurityController provides permission management. For compatibility SecuritySupport is still available as a deprecated interface but only its visibleToScripts method is used as an alias for ClassShutter.visibleToScripts. See API documentation for new classes for details.
 
-An implementation of SecurityController that uses java policy settings to restrict script permissions based on its URL is available with Rhino shell. See the [JavaPolicySecurity](/rhino/javadoc/org/mozilla/javascript/tools/shell/JavaPolicySecurity.html) source for details. To activate it, set the `rhino.use_java_policy_security` system property to true when invoking Rhino shell together with installing a security manager.
+An implementation of SecurityController that uses java policy settings to restrict script permissions based on its URL is available with Rhino shell. See the [JavaPolicySecurity](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/tools/shell/JavaPolicySecurity.html) source for details. To activate it, set the `rhino.use_java_policy_security` system property to true when invoking Rhino shell together with installing a security manager.
 
 ## Serialization changes
 Due to changes in Rhino implementation and bug fixes in serialization support runtime data serialized in Rhino 1.5 Release 3 can not be read back in the Release 4.
@@ -52,7 +52,7 @@ obj.someMethod();
 ```
 
 ## Shell function to run external processes.
-A new `runCommand` function is added to [Rhino Shell](../../_tools/shell.md) to run external priocesses. For details, see [runCommand](/rhino/javadoc/org/mozilla/javascript/tools/shell/Global.html#runCommand-org.mozilla.javascript.Context-org.mozilla.javascript.Scriptable-java.lang.Object:A-org.mozilla.javascript.Function-)
+A new `runCommand` function is added to [Rhino Shell](../../_tools/shell.md) to run external priocesses. For details, see [runCommand](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/tools/shell/Global.html#runCommand-org.mozilla.javascript.Context-org.mozilla.javascript.Scriptable-java.lang.Object:A-org.mozilla.javascript.Function-)
 
 ## Resolved Bugzilla reports
 The following Rhino reports in Bugzilla where resolved for Rhino 1.5 Release 4.

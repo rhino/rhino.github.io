@@ -31,7 +31,7 @@ There are six fundamental types in JavaScript. These types are implemented with 
 
 |  JavaScript fundamental type  |  Java type  |
 |  ---  |  ---  |
-|  `undefined`  |  A singleton object defined by `[Context.getUndefinedType()](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/Context.html#getUndefinedValue--)`  |
+|  `undefined`  |  A singleton object defined by `[Context.getUndefinedType()](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#getUndefinedValue--)`  |
 |  `null`  |  `null`  |
 |  `boolean`  |  `java.lang.Boolean`  |
 |  `number`  |  `java.lang.Number`, that is, any of `java.lang.Byte`, `java.lang.Short`, `java.lang.Integer`, `java.lang.Float`, or `java.lang.Double`. Not java.lang.Long, since a double representation of a long may lose precision.  |
@@ -48,15 +48,15 @@ The behavior of the JavaScript engine is undefined if a value of any type other 
 
 Properties in JavaScript objects may be accessed using either string or numeric identifiers. Conceptually, all accessors are converted to strings in order to perform the lookup of the property in the object. However, this is not the implementation used in practice because a number to string conversion is too expensive to be performed on every array access.
 
-Instead, every property accessor method in [Scriptable](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/Scriptable.html) (`has`, `get`, `set`, `remove`, `getAttributes`, and `setAttributes`) has overloaded forms that take either a `String` or an `int` argument. It is the responsibility of the caller to invoke the appropriate overloaded form. For example, evaluating the expression `obj["3"]` will invoke the get(int, Scriptable) method even though the property name was presented in the script as a string. Similarly, values of numbers that do not fix in integers (like 1.1 and 0x100000000) must be converted to strings.
+Instead, every property accessor method in [Scriptable](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Scriptable.html) (`has`, `get`, `set`, `remove`, `getAttributes`, and `setAttributes`) has overloaded forms that take either a `String` or an `int` argument. It is the responsibility of the caller to invoke the appropriate overloaded form. For example, evaluating the expression `obj["3"]` will invoke the get(int, Scriptable) method even though the property name was presented in the script as a string. Similarly, values of numbers that do not fit in integers (like 1.1 and 0x100000000) must be converted to strings.
 
 ## Defining Host Objects
 
 Host objects are JavaScript objects that provide special access to the host environment. For example, in a browser environment, the Window and Document objects are host objects.
 
-The easiest way to define new host objects is by using [ScriptableObject.defineClass()](https://p-bakker.github.io/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-). This method defines a set of JavaScript objects using a Java class. Several of the [examples](examples.md) define host objects this way.
+The easiest way to define new host objects is by using [ScriptableObject.defineClass()](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-). This method defines a set of JavaScript objects using a Java class. Several of the [examples](examples.md) define host objects this way.
 
-If the services provided by `defineClass` are insufficient, try other methods of [ScriptableObject](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html) and [FunctionObject](https://mozilla.github.io/rhino/javadoc/org/mozilla/javascript/FunctionObject.html), such as `defineProperty` and `defineFunctionProperties`.
+If the services provided by `defineClass` are insufficient, try other methods of [ScriptableObject](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/ScriptableObject.html) and [FunctionObject](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/FunctionObject.html), such as `defineProperty` and `defineFunctionProperties`.
 
 ## Contexts and Threads
 

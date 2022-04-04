@@ -52,7 +52,7 @@ Java classes with getFoo/setFoo methods will have a "foo" property in the JavaSc
 Rhino 1.5 implements support for dynamic scopes, which are particularly useful for multithreaded environments like server embeddings.
 
 ### New semantics for `ScriptableObject.defineClass`
-The old rules for defining JavaScript objects using a Java class were getting baroque. Those rules are still supported, but a cleaner definition is now supported. See the [javadoc](/rhino/javadoc/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-boolean-) for details.
+The old rules for defining JavaScript objects using a Java class were getting baroque. Those rules are still supported, but a cleaner definition is now supported. See the [javadoc](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/ScriptableObject.html#defineClass-org.mozilla.javascript.Scriptable-java.lang.Class-boolean-boolean-) for details.
 
 ### Support for the Java 2 `-jar` option
 It's now possible to start the shell using the new `-jar` option in Java 2.
@@ -68,10 +68,10 @@ Andrew Wason pointed a problem with the new JavaAdapter feature (which allows Ja
 I've checked in changes that fix this problem. If a SecuritySupport class is specified when a Context is created, uses of JavaAdapter will will delegate class creation to the SecuritySupport class.
 
 ### Context.exit()
-Context.exit() has been changed from an instance method to a static method. This makes it match the Context.enter() method, which is also static. See the [javadoc](/rhino/javadoc/org/mozilla/javascript/Context.html#exit--) for more information on its operation.
+Context.exit() has been changed from an instance method to a static method. This makes it match the Context.enter() method, which is also static. See the [javadoc](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#exit--) for more information on its operation.
 
 ### Context.enter(Context)
-A new overloaded form of Context.enter has been added. Without the addition of this method it was not possible to attach an existing context to a thread. See the [javadoc](/rhino/javadoc/org/mozilla/javascript/Context.html#enter-org.mozilla.javascript.Context-) for more information on its operation.
+A new overloaded form of Context.enter has been added. Without the addition of this method it was not possible to attach an existing context to a thread. See the [javadoc](https://javadoc.io/doc/org.mozilla/rhino/latest/org/mozilla/javascript/Context.html#enter-org.mozilla.javascript.Context-) for more information on its operation.
 
 ### Listeners for Context
 Context now supports property change listeners for a couple of its properties.
