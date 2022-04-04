@@ -195,7 +195,7 @@ Custom host objects can implement special JavaScript features like dynamic prope
 
 ### Counter example
 
-The [Counter example](https://github.com/mozilla/rhino/examples/Counter.java) is a simple host object. We'll go through it method by method below.
+The [Counter example](https://mozilla.github.com/rhino/examples/Counter.java) is a simple host object. We'll go through it method by method below.
 
 It's easy to try out new host object classes in the shell using its built-in `defineClass` function. We'll see how to add it to RunScript later. (Note that because the `java -jar` option preempts the rest of the classpath, we can't use that and access the `Counter` class.)
 
