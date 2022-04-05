@@ -15,8 +15,6 @@ has_toc: false
 {:toc}
 
 ---
-TODO update with info on snapshot builds, github packages, content of the zip artifact
-
 Release Notes and zip files containing both the source code and a binary) are available from Rhino 1.4R3 onwards, which is the first public release.
 
 As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on GitHub.
@@ -37,7 +35,7 @@ These artifacts can be downloaded separatly through the [Releases](https://githu
 ## Maven
 The Rhino artifacts are also available through [MVNrepository](https://mvnrepository.com) under groupId [org.mozilla](https://mvnrepository.com/artifact/org.mozilla)
 
-|  Artifact  |  artifactId  | 
+|  Artifact  |  artifactId  |
 |  ---  |  ---  |
 |  `rhino-runtime-X.X.X.jar`  |  [rhino-runtime](https://mvnrepository.com/artifact/org.mozilla/rhino-runtime)  |
 |  `rhino-X.X.X.jar`  |  [rhino](https://mvnrepository.com/artifact/org.mozilla/rhino)  |
@@ -47,6 +45,7 @@ The Rhino artifacts are also available through [MVNrepository](https://mvnreposi
 
 |  Release  |  Release Date  |  Release Notes  |  Links  |
 |  ---  |  ---  |  ---  |  ---  |
+|  Rhino 1.7.14  |  2022-01-06  |  [Release Notes](rhino_1.7.14.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_14_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_14_Release/rhino-1.7.14.zip)  |
 |  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_13_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
 |  Rhino 1.7.12  |  2020-01-13  |  [Release Notes](new_in_rhino_1.7.12.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_12_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip)  |
 |  Rhino 1.7.11  |  2019-05-30  |  [Release Notes](new_in_rhino_1.7.11.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_11_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_11_Release/rhino-1.7.11.zip)  |
@@ -85,7 +84,6 @@ The Rhino artifacts are also available through [MVNrepository](https://mvnreposi
 
     {: .note }
     > Some automated source-scanning tools mark these capabilties as insecure, hence the reason of providing the rhino-runtime-X.X.X.jar that excludes the tools
-    
 
 [^2]: Rhino 1.6R1 through 1.6R6 implements [E4X](https://developer.mozilla.org/en-US/docs/Archive/Web/E4X) using the [XMLBeans](https://xmlbeans.apache.org/) library.
 
@@ -93,6 +91,6 @@ The Rhino artifacts are also available through [MVNrepository](https://mvnreposi
 
     Rhino 1.6R6 and later the E4X support has been rewritten to rely solely on the DOM3 APIs supported natively by Java 1.5.
 
-    Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser. 
+    Pre-Java 1.5 users can use DOM3 using Java's endorsed standards override mechanism if they have a DOM3-capable XML parser.
 
     If neither XMLBeans nor DOM3 are present, E4X is not available.
