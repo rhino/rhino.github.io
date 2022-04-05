@@ -15,12 +15,14 @@ has_toc: false
 {:toc}
 
 ---
+TODO update with info on snapshot builds, github packages, content of the zip artifact
+
 Release Notes and zip files containing both the source code and a binary) are available from Rhino 1.4R3 onwards, which is the first public release.
 
-As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on Github.
+As of Rhino 1.7R5 development and releases are done through the [Rhino repository](https://github.com/mozilla/rhino) on GitHub.
 
 ## Available artifacts
-These artifacts can be downloaded separatly through the [Releases](https://github.com/mozilla/rhino/releases) section on GitLab. Also see the `Release` link in the [Release Overview](#release-overview) for each release.
+These artifacts can be downloaded separatly through the [Releases](https://github.com/mozilla/rhino/releases) section on GitHub. Also see the `Release` link in the [Release Overview](#release-overview) for each release.
 
 |  Artifact  |  Description  |  Usage  |  Notes  |
 |  ---  |  ---  |  ---  |  ---  |
