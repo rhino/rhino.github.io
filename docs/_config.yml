@@ -57,6 +57,15 @@ relative_links:
   enabled: true
   collections: true
 
+# External navigation links
+nav_external_links:
+  - title: JavaDoc
+    url: https://javadoc.io/doc/org.mozilla/rhino
+    opens_in_new_tab: true
+  - title: Kangax's Compat Tables
+    url: /compat/engines.html
+    opens_in_new_tab: true
+
 callouts:
   warning:
     color: red
