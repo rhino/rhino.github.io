@@ -65,7 +65,7 @@ try {
 ```
 Note also that as an added convenience ContinuationPending supports saving an application-defined object. The continuations API is only supported for interpreted mode.
 
-For more examples of using the API, see the unit test, [ContinuationsAPITest.java](https://github.com/mozilla/rhino/tree/master/testsrc/org/mozilla/javascript/tests/ContinuationsApiTest.java).
+For more examples of using the API, see the unit test, [ContinuationsAPITest.java](https://github.com/mozilla/rhino/blob/master/testsrc/org/mozilla/javascript/tests/ContinuationsApiTest.java).
 
 ## Better line editing for Rhino shell
 
