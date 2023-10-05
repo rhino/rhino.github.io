@@ -273,7 +273,7 @@ new JavaAdapter(javaIntfOrClass, [javaIntf, ..., javaIntf,] javascriptObject)
 
 Here `javaIntfOrClass` is an interface to implement or a class to extend and `javaIntf` are aditional interfaces to implement. The `javascriptObject` is the JavaScript object containing the methods that will be called from the Java adapter.
 
- See the `enum.js` example for more information TODO link enum.js
+ See the [enum.js](https://github.com/mozilla/rhino/blob/master/examples/enum.js) example for more information
 
 In practice there's little need to call the `JavaAdapter` constructor directly. Most of the time the previous syntaxes using the `new` operator will be sufficient.
 
