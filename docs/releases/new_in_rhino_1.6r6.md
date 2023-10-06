@@ -1,7 +1,7 @@
 ---
 title: Rhino 1.6R6
 parent: Releases
-nav_order: -12
+nav_order: 12
 ---
 
 # {{ page.title }}

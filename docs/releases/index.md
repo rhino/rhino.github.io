@@ -1,6 +1,7 @@
 ---
 title: Releases
 has_children: true
+child_nav_order: reversed
 has_toc: false
 ---
 # {{ page.title }}

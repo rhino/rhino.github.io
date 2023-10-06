@@ -1,7 +1,7 @@
 ---
 title: Rhino 1.5R2
 parent: Releases
-nav_order: -2
+nav_order: 2
 ---
 
 # {{ page.title }}

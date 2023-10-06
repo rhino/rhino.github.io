@@ -1,7 +1,7 @@
 ---
 title: Rhino 1.7.6
 parent: Releases
-nav_order: -19
+nav_order: 19
 ---
 
 # {{ page.title }}
