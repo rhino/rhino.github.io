@@ -58,7 +58,7 @@ The Rhino artifacts are also available through [MVNrepository](https://mvnreposi
 |  Rhino 1.7.7  |  2015-06-17  |  [Release Notes](new_in_rhino_1.7.7.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_7_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_RELEASE/rhino1.7.7.zip)  |
 |  Rhino 1.7.6  |  2015-04-15  |  [Release Notes](new_in_rhino_1.7.6.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_6_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_6_RELEASE/rhino1.7.6.zip)  |
 |  Rhino 1.7R5  |  2015-01-29  |  [Release Notes](new_in_rhino_1.7r5.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7R5_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7R5_RELEASE/rhino1_7R5.zip)  |
-|  Rhino 1.7R4  |  2012-06-18  |  [New in Rhino 1.7R4](new_in_rhino_1.7r4.md)  |  [zip](https://github.com/mozilla/rhino/archive/refs/tags/Rhino1_7R4_RELEASE.zip)  |
+|  Rhino 1.7R4  |  2012-06-18  |  [New in Rhino 1.7R4](new_in_rhino_1.7r4.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7R4_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7R4_RELEASE/rhino1_7R4.zip)  |
 |  Rhino 1.7R3  |  2011-05-09  |  [New in Rhino 1.7R3](new_in_rhino_1.7r3.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R3.zip)  |
 |  Rhino 1.7R2  |  2009-03-22  |  [New in Rhino 1.7R2](new_in_rhino_1.7r2.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R2.zip)  |
 |  Rhino 1.7R1  |  2008-03-06  |  [New in Rhino 1.7R1](new_in_rhino_1.7r1.md)  |  [zip](https://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R1.zip)  |
