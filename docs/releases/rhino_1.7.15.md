@@ -1,3 +1,25 @@
+---
+title: Rhino 1.7.15
+parent: Releases
+nav_order: 28
+---
+
+# {{ page.title }}
+{: .no_toc }
+
+{: .fs-6 .fw-300 }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+# Links
+* [1.7.14 milestone](https://github.com/mozilla/rhino/milestone/17)
+* [All merged PRs](https://github.com/mozilla/rhino/pulls?q=is%3Apr+merged%3A2022-01-06..2024-05-05)
+
 # Rhino 1.7.15
 
 Highlights of this release include:
