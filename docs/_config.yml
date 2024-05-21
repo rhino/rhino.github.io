@@ -63,7 +63,7 @@ nav_external_links:
     url: https://javadoc.io/doc/org.mozilla/rhino
     opens_in_new_tab: true
   - title: Kangax's Compat Tables
-    url: /compat/engines.html
+    url: https://mozilla.github.io/rhino/compat/engines.html
     opens_in_new_tab: true
 
 callouts:
