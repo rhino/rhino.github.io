@@ -46,6 +46,7 @@ The Rhino artifacts are also available through [MVNrepository](https://mvnreposi
 
 |  Release  |  Release Date  |  Release Notes  |  Links  |
 |  ---  |  ---  |  ---  |  ---  |
+|  Rhino 1.7.15  |  2022-05-04  |  [Release Notes](rhino_1.7.15.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_15_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_15_Release/rhino-1.7.15.zip)  |
 |  Rhino 1.7.14  |  2022-01-06  |  [Release Notes](rhino_1.7.14.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_14_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_14_Release/rhino-1.7.14.zip)  |
 |  Rhino 1.7.13  |  2020-09-02  |  [Release Notes](new_in_rhino_1.7.13.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_13_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_13_Release/rhino-1.7.13.zip)  |
 |  Rhino 1.7.12  |  2020-01-13  |  [Release Notes](new_in_rhino_1.7.12.md)  |  [Release](https://github.com/mozilla/rhino/releases/tag/Rhino1_7_12_Release), [zip](https://github.com/mozilla/rhino/releases/download/Rhino1_7_12_Release/rhino-1.7.12.zip)  |
