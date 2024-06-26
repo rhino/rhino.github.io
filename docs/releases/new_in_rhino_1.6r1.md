@@ -18,7 +18,7 @@ nav_order: 7
 ---
 Release Date: 2004-11-29
 
-Rhino 1.6R1 is the new major release of Rhino. It supports ECMAScript for XML (E4X) as specified by [ECMA 357 standard](https://www.ecma-international.org/wp-content/uploads/ECMA-357_2nd_edition_december_2005.pdf). E4X is a set of language extensions adding native XML support for JavaScript without affecting the existing code base. [E4X example](https://github.com/mozilla/rhino/blob/master/examples/E4X/e4x_example.js) demonstrates various E4X constructions and their usage in JavaScript code.
+Rhino 1.6R1 is the new major release of Rhino. It supports ECMAScript for XML (E4X) as specified by [ECMA 357 standard](https://www.ecma-international.org/wp-content/uploads/ECMA-357_2nd_edition_december_2005.pdf). E4X is a set of language extensions adding native XML support for JavaScript without affecting the existing code base. [E4X example](https://github.com/mozilla/rhino/blob/master/examples/src/main/resources/E4X/e4x_example.js) demonstrates various E4X constructions and their usage in JavaScript code.
 
 This version of Rhino should be binary compatible with the current embeddings that use only public [API](https://javadoc.io/doc/org.mozilla/rhino/latestindex.html) unless the code use the previously deprected classes as documented [below](#removal-of-deprecated-classes). Please report any incompatibility issues to Bugzilla.
 
@@ -31,7 +31,7 @@ See [Bugzilla 242805](https://bugzilla.mozilla.org/show_bug.cgi?id=242805) for d
 
 ## Other changes
 ### Common root for Rhino execeptions
-Now all Rhino execption classes are derived from [org.mozilla.javascript.RhinoException](https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/RhinoException.java) which extends `java.lang.RuntimeException`. The class gives the uniform way to access information about the script origin of the exception and simplifies execption handling in Rhino embeddings.
+Now all Rhino execption classes are derived from [org.mozilla.javascript.RhinoException](https://github.com/mozilla/rhino/blob/master/rhino/src/main/java/org/mozilla/javascript/RhinoException.java) which extends `java.lang.RuntimeException`. The class gives the uniform way to access information about the script origin of the exception and simplifies execption handling in Rhino embeddings.
 
 See [Bugzilla 244492](https://bugzilla.mozilla.org/show_bug.cgi?id=244492) for details.
 
