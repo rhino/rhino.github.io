@@ -130,7 +130,7 @@ There's one problem with the setup outlined above. Calls to functions in JavaScr
 
 With Rhino 1.6, it is possible to use _dynamic scope_. With dynamic scope, functions look at the top-level scope of the currently executed script rather than their lexical scope. So we can store information that varies across scopes in the instance scope yet still share functions that manipulate that information reside in the shared scope.
 
-The [DynamicScopes example](https://github.com/mozilla/rhino/examples/DynamicScopes.java) illustrates all the points discussed above.
+The [DynamicScopes example](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/DynamicScopes.java) illustrates all the points discussed above.
 
 ## More on Scopes
 

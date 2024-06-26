@@ -22,7 +22,7 @@ The examples live in the `rhino/examples` directory in the distribution and in `
 
 ## RunScript: A simple embedding
 
-About the simplest embedding of Rhino possible is the [RunScript example](https://github.com/mozilla/rhino/examples/RunScript.java). All it does it read a script from the command line, execute it, and print a result.
+About the simplest embedding of Rhino possible is the [RunScript example](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/RunScript.java). All it does it read a script from the command line, execute it, and print a result.
 
 Here's an example use of RunScript from a shell command line:
 
@@ -129,7 +129,7 @@ hi
 
 ### Adding Java objects
 
-The next example is [RunScript2](https://github.com/mozilla/rhino/examples/RunScript2.java). This is the same as RunScript, but with the addition of two extra lines of code:
+The next example is [RunScript2](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/RunScript2.java). This is the same as RunScript, but with the addition of two extra lines of code:
 
 ```java
 Object wrappedOut = Context.javaToJS(System.out, scope);
@@ -146,7 +146,7 @@ undefined
 
 ## Using JavaScript objects from Java
 
-After evaluating a script it's possible to query the scope for variables and functions, extracting values and calling JavaScript functions. This is illustrated in the [RunScript3](https://github.com/mozilla/rhino/examples/RunScript3.java) example. This example adds the ability to print the value of variable _x_ and the result of calling function `f`. Both _x_ and _f_ are expected to be defined by the evaluated script. For example,
+After evaluating a script it's possible to query the scope for variables and functions, extracting values and calling JavaScript functions. This is illustrated in the [RunScript3](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/RunScript3.java) example. This example adds the ability to print the value of variable _x_ and the result of calling function `f`. Both _x_ and _f_ are expected to be defined by the evaluated script. For example,
 
 ```sh
 $ java RunScript3 "x = 7"
@@ -195,7 +195,7 @@ Custom host objects can implement special JavaScript features like dynamic prope
 
 ### Counter example
 
-The [Counter example](https://mozilla.github.com/rhino/examples/Counter.java) is a simple host object. We'll go through it method by method below.
+The [Counter example](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/Counter.java) is a simple host object. We'll go through it method by method below.
 
 It's easy to try out new host object classes in the shell using its built-in `defineClass` function. We'll see how to add it to RunScript later. (Note that because the `java -jar` option preempts the rest of the classpath, we can't use that and access the `Counter` class.)
 
@@ -270,7 +270,7 @@ The call `c.resetCount()` above calls this method.
 
 ### Adding Counter to RunScript
 
-Now take a look at the [RunScript4 example](https://github.com/mozilla/rhino/examples/RunScript4.java). It's the same as RunScript except for two additions. The method `ScriptableObject.defineClass` uses a Java class to define the Counter "class" in the top-level scope:
+Now take a look at the [RunScript4 example](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/RunScript4.java). It's the same as RunScript except for two additions. The method `ScriptableObject.defineClass` uses a Java class to define the Counter "class" in the top-level scope:
 
 ```java
 ScriptableObject.defineClass(scope, Counter.class);

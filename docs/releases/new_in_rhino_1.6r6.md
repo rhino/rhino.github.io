@@ -69,7 +69,7 @@ Wrapped access to system properties and creation of class loaders into AccessCon
 
 Rhino now comes with test drivers written in Java. These drivers can be used to test Rhino if you are making any changes to the core engine. They are designed to use the tests shared with the C-based SpiderMonkey engine in mozilla/js/tests in CVS.
 
-See [Running the Rhino tests](https://github.com/mozilla/rhino/blob/master/testsrc/README.md) for details on how to execute the tests using JsDriver.
+See [Running the Rhino tests](https://github.com/mozilla/rhino/blob/master/tests/testsrc/README.md) for details on how to execute the tests using JsDriver.
 
 ## Support for calling Java methods and constructors with variable argument lists
 

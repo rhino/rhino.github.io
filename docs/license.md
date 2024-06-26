@@ -24,4 +24,4 @@ Few parts of the overall Rhino codebase are distributed under a different licens
 Portions of the floating-point conversion code, and portions of the test suite come from the Google V8 JavaScript engine and are copyrighted by the V8 authors, see [NOTICE.txt](https://github.com/mozilla/rhino/blob/master/NOTICE.txt)
 
 ### License for part of the Rhino Debugger
-The files in [toolsrc/org/mozilla/javascript/tools/debugger/treetable](https://github.com/mozilla/rhino/tree/master/toolsrc/org/mozilla/javascript/tools/debugger/treetable) are copyrighted by Sun Microsystems, Inc., see [NOTICE-tools.txt](https://github.com/mozilla/rhino/blob/master/NOTICE-tools.txt)
+The files in [rhino-tools/src/main/java/org/mozilla/javascript/tools/debugger/treetable](https://github.com/mozilla/rhino/tree/master/rhino-tools/src/main/java/org/mozilla/javascript/tools/debugger/treetable) are copyrighted by Sun Microsystems, Inc., see [NOTICE-tools.txt](https://github.com/mozilla/rhino/blob/master/NOTICE-tools.txt)
